@@ -1875,17 +1875,19 @@
             // セクション名から並べ替え状態を取得（デフォルトは時価総額順）
             const sortState = sectionSortState[sectionName] || { mode: 'marketCap', order: 'desc' };
             
-            sectionData.sort((a, b) => {
+            // 並び替えを実行
+            const sortedData = [...sectionData].sort((a, b) => {
                 if (sortState.mode === 'changePercent') {
                     // 上昇率順で並べ替え
                     const aChange = (a.changePercent !== null && a.changePercent !== undefined && !isNaN(a.changePercent)) ? Number(a.changePercent) : -999999;
                     const bChange = (b.changePercent !== null && b.changePercent !== undefined && !isNaN(b.changePercent)) ? Number(b.changePercent) : -999999;
-                    // 降順: 大きい順、昇順: 小さい順
+                    // 降順: 大きい順（左上が最大）、昇順: 小さい順（左上が最小）
                     return sortState.order === 'desc' ? bChange - aChange : aChange - bChange;
                 } else if (sortState.mode === 'rsi') {
                     // RSI順で並べ替え
                     const aRsi = (a.rsi !== null && a.rsi !== undefined && !isNaN(a.rsi)) ? Number(a.rsi) : -1;
                     const bRsi = (b.rsi !== null && b.rsi !== undefined && !isNaN(b.rsi)) ? Number(b.rsi) : -1;
+                    // 降順: 大きい順（左上が最大）、昇順: 小さい順（左上が最小）
                     return sortState.order === 'desc' ? bRsi - aRsi : aRsi - bRsi;
                 } else {
                     // 時価総額順で並べ替え（デフォルト）
@@ -1902,27 +1904,38 @@
                     return sortState.order === 'desc' ? bMarketCap - aMarketCap : aMarketCap - bMarketCap;
                 }
             });
-            sectionData.forEach((stockData, index) => {
+            
+            // デバッグ用：並び替え結果を確認
+            if (sortState.mode === 'changePercent') {
+                console.log(`🔍 ${sectionName}セクション - 成長率順（${sortState.order === 'desc' ? '降順' : '昇順'}）:`, 
+                    sortedData.slice(0, 5).map(s => `${s.symbol}: ${s.changePercent}%`));
+            } else if (sortState.mode === 'rsi') {
+                console.log(`🔍 ${sectionName}セクション - RSI順（${sortState.order === 'desc' ? '降順' : '昇順'}）:`, 
+                    sortedData.slice(0, 5).map(s => `${s.symbol}: ${s.rsi}`));
+            }
+            
+            // 並び替え後の順序で同期的にタイルを追加（左上から右へ、端まで来たら下の段へ）
+            sortedData.forEach((stockData, index) => {
                 const tile = createDynamicTile(stockData);
+                container.appendChild(tile);
+                
+                // チャート描画は非同期で実行（表示順序には影響しない）
                 setTimeout(() => {
-                    container.appendChild(tile);
-                    setTimeout(() => {
-                        const canvas = tile.querySelector('.chart-canvas');
-                        if (canvas && stockData.historicalPrices && stockData.historicalPrices.length > 1) {
-                            const tileClasses = tile.className;
-                            let chartOpacity = tileClasses.includes('neutral') ? 0.6 : 
-                                              tileClasses.includes('loss-') ? 0.55 : 0.5;
-                            let useWhiteChart = tileClasses.includes('gain-');
-                            if (tileClasses.includes('size-mini') || tileClasses.includes('size-micro')) {
-                                chartOpacity += 0.1;
-                            }
-                            canvas.style.opacity = chartOpacity.toString();
-                            drawMiniChart(canvas, stockData.historicalPrices, stockData.changePercent, useWhiteChart);
-                        } else if (canvas) {
-                            drawPlaceholderChart(canvas, stockData.changePercent);
+                    const canvas = tile.querySelector('.chart-canvas');
+                    if (canvas && stockData.historicalPrices && stockData.historicalPrices.length > 1) {
+                        const tileClasses = tile.className;
+                        let chartOpacity = tileClasses.includes('neutral') ? 0.6 : 
+                                          tileClasses.includes('loss-') ? 0.55 : 0.5;
+                        let useWhiteChart = tileClasses.includes('gain-');
+                        if (tileClasses.includes('size-mini') || tileClasses.includes('size-micro')) {
+                            chartOpacity += 0.1;
                         }
-                    }, 50);
-                }, index * 100);
+                        canvas.style.opacity = chartOpacity.toString();
+                        drawMiniChart(canvas, stockData.historicalPrices, stockData.changePercent, useWhiteChart);
+                    } else if (canvas) {
+                        drawPlaceholderChart(canvas, stockData.changePercent);
+                    }
+                }, 50);
             });
         }
         
