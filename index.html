@@ -1878,13 +1878,14 @@
             sectionData.sort((a, b) => {
                 if (sortState.mode === 'changePercent') {
                     // 上昇率順で並べ替え
-                    const aChange = a.changePercent !== null && a.changePercent !== undefined ? a.changePercent : -999;
-                    const bChange = b.changePercent !== null && b.changePercent !== undefined ? b.changePercent : -999;
+                    const aChange = (a.changePercent !== null && a.changePercent !== undefined && !isNaN(a.changePercent)) ? Number(a.changePercent) : -999999;
+                    const bChange = (b.changePercent !== null && b.changePercent !== undefined && !isNaN(b.changePercent)) ? Number(b.changePercent) : -999999;
+                    // 降順: 大きい順、昇順: 小さい順
                     return sortState.order === 'desc' ? bChange - aChange : aChange - bChange;
                 } else if (sortState.mode === 'rsi') {
                     // RSI順で並べ替え
-                    const aRsi = a.rsi !== null && a.rsi !== undefined ? a.rsi : -1;
-                    const bRsi = b.rsi !== null && b.rsi !== undefined ? b.rsi : -1;
+                    const aRsi = (a.rsi !== null && a.rsi !== undefined && !isNaN(a.rsi)) ? Number(a.rsi) : -1;
+                    const bRsi = (b.rsi !== null && b.rsi !== undefined && !isNaN(b.rsi)) ? Number(b.rsi) : -1;
                     return sortState.order === 'desc' ? bRsi - aRsi : aRsi - bRsi;
                 } else {
                     // 時価総額順で並べ替え（デフォルト）
