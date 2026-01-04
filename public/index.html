@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4STVPWK6G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4STVPWK6G');
+</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥇💰 METALS TREEMAP v3.29 💰💎</title>
+    <style>
+        /* Google Fontsの読み込み（オプショナル - エラー時はシステムフォントを使用） */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { overflow-x: hidden; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            overflow-x: hidden;
+            min-height: 100vh;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            padding: 25px 15px 15px 15px;
+            position: relative;
+            z-index: 1;
+            background: inherit;
+            max-width: none;
+            overflow-x: auto;
+        }
+        
+        .header { text-align: center; margin-bottom: 20px; padding-top: 10px; }
+        
+        .title {
+            font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+            font-weight: 900;
+            margin-bottom: 5px;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FF6B35, #F7931E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes titleGlow {
+            0% { filter: brightness(1) drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)); }
+            100% { filter: brightness(1.3) drop-shadow(0 0 40px rgba(255, 215, 0, 0.6)); }
+        }
+        
+        .subtitle {
+            font-size: clamp(0.8rem, 1.8vw, 1rem);
+            opacity: 0.9;
+            margin-bottom: 10px;
+            color: #FFD700;
+            font-weight: 600;
+        }
+        
+        .disclaimer {
+            font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+            opacity: 0.85;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .disclaimer p {
+            margin-bottom: 8px;
+        }
+        
+        .disclaimer .signature {
+            display: inline;
+            font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+            opacity: 0.85;
+            color: rgba(255, 255, 255, 0.8);
+            font-style: normal;
+            margin-left: 1em;
+        }
+        
+        .server-setup {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+        }
+        
+        .api-input-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .test-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border: none;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+        }
+        
+        .test-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .server-status {
+            margin-top: 8px;
+            font-size: clamp(0.6rem, 1vw, 0.75rem);
+            text-align: center;
+            line-height: 1.3;
+            min-height: 40px;
+        }
+        
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        
+        .period-buttons {
+            display: flex;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .period-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid transparent;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: clamp(0.6rem, 1vw, 0.75rem);
+            min-width: 80px;
+        }
+        
+        .period-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .period-btn.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .update-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #000;
+            font-weight: 700;
+            font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .update-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+        
+        .update-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .update-btn.loading .update-icon {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .last-update {
+            font-size: clamp(0.6rem, 1vw, 0.7rem);
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+        
+        /* 市場開場時間表示スタイル */
+        .market-hours {
+            margin-top: 15px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .market-hours-title {
+            font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+            font-weight: 700;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .market-hours-info {
+            font-size: clamp(0.6rem, 1vw, 0.7rem);
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+        }
+        
+        .market-hours-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            overflow-x: auto;
+            min-width: 100%;
+        }
+        
+        .market-hours-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            min-width: 620px; /* 最小幅を600pxから620pxに拡張 */
+        }
+        
+        .market-hours-header .market-name {
+            width: 100px;
+            min-width: 100px; /* 固定幅を80pxから100pxに拡張 */
+            font-size: clamp(0.6rem, 1vw, 0.7rem);
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            flex-shrink: 0;
+        }
+        
+        .hours-grid {
+            display: flex;
+            gap: 0;
+            flex: 1;
+            min-width: 520px; /* 24時間 × 約21.7px */
+        }
+        
+        .hours-grid span {
+            flex: 1;
+            text-align: center;
+            font-size: clamp(0.5rem, 0.8vw, 0.6rem);
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+            min-width: 21.7px; /* 520px ÷ 24時間 */
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hours-grid span:last-child {
+            border-right: none;
+        }
+        
+        .market-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 620px; /* ヘッダーと同じ最小幅 */
+        }
+        
+        .market-info {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 100px;
+            min-width: 100px; /* 固定幅を80pxから100pxに拡張 */
+            flex-shrink: 0;
+        }
+        
+        .market-info .flag {
+            font-size: clamp(0.8rem, 1.2vw, 1rem);
+        }
+        
+        .market-info .market-name {
+            font-size: clamp(0.6rem, 1vw, 0.7rem);
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+        
+        .hours-bar {
+            height: 16px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            position: relative;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            min-width: 520px; /* 時間グリッドと同じ幅 */
+        }
+        
+        /* 各市場の開場時間（JavaScriptで動的に設定） */
+        .us-hours, .ca-hours, .gb-hours, .au-hours, .jp-hours {
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                transparent 0%, 
+                #4CAF50 0%, 
+                #4CAF50 0%, 
+                transparent 0%, 
+                transparent 100%);
+        }
+        
+        .data-warning {
+            background: rgba(255, 152, 0, 0.15);
+            border: 1px solid rgba(255, 152, 0, 0.4);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: clamp(0.65rem, 1vw, 0.75rem);
+            margin-top: 8px;
+            text-align: center;
+        }
+        
+        .metals-treemap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1900px;
+            margin: 0 auto;
+            padding: 20px 8px 120px 8px;
+            min-height: calc(100vh - 200px);
+        }
+        
+        .metal-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            position: relative;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .metal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--metal-color);
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .metal-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .metal-icon { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+        
+        .metal-title {
+            font-weight: 800;
+            color: var(--metal-color);
+            flex: 1;
+            font-size: clamp(1rem, 1.8vw, 1.4rem);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        .metal-subtitle {
+            opacity: 0.8;
+            font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+            font-weight: 600;
+        }
+        
+        .gold-section { --metal-color: #FFD700; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); }
+        .silver-section { --metal-color: #C0C0C0; background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(192, 192, 192, 0.05)); }
+        .copper-section { --metal-color: #FF6B35; background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05)); }
+        .fertilizer-section { --metal-color: #7CFC00; background: linear-gradient(135deg, rgba(124, 252, 0, 0.1), rgba(124, 252, 0, 0.05)); }
+        .platinum-section { --metal-color: #E6E6FA; background: linear-gradient(135deg, rgba(230, 230, 250, 0.1), rgba(230, 230, 250, 0.05)); }
+        .lithium-section { --metal-color: #00D4FF; background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 212, 255, 0.05)); }
+        .uranium-section { --metal-color: #39FF14; background: linear-gradient(135deg, rgba(57, 255, 20, 0.1), rgba(57, 255, 20, 0.05)); }
+        .nickel-section { --metal-color: #B0E0E6; background: linear-gradient(135deg, rgba(176, 224, 230, 0.1), rgba(176, 224, 230, 0.05)); }
+        .ree-section { --metal-color: #FF1493; background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 20, 147, 0.05)); }
+        .titanium-section { --metal-color: #A0A0A0; background: linear-gradient(135deg, rgba(160, 160, 160, 0.1), rgba(160, 160, 160, 0.05)); }
+        
+        .tiles-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex: 1;
+            align-items: flex-start;
+            justify-content: flex-start;
+            min-height: 200px;
+        }
+        
+        .dynamic-tile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            min-width: 120px;
+            min-height: 100px;
+            padding: 8px;
+            overflow: hidden;
+        }
+        
+        .chart-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.35;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .dynamic-tile:hover {
+            transform: translateY(-6px) scale(1.05);
+            z-index: 10;
+            border-color: var(--metal-color);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .size-mega { width: 380px; height: 240px; border-width: 5px; }
+        .size-ultra-large { width: 320px; height: 200px; border-width: 4px; }
+        .size-extra-large { width: 280px; height: 180px; border-width: 3px; }
+        .size-large { width: 240px; height: 160px; border-width: 3px; }
+        .size-medium { width: 200px; height: 140px; border-width: 2px; }
+        .size-small { width: 170px; height: 120px; border-width: 2px; }
+        .size-mini { width: 140px; height: 110px; border-width: 2px; }
+        .size-micro { width: 120px; height: 95px; border-width: 1px; }
+        
+        .tile-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+            gap: 4px;
+            position: relative;
+            padding: 4px 8px;
+            z-index: 2;
+        }
+        
+        .size-small .tile-content,
+        .size-mini .tile-content,
+        .size-micro .tile-content {
+            gap: 1px;
+            padding: 3px 6px;
+        }
+        
+        .sort-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: clamp(0.65rem, 1vw, 0.75rem);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .sort-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+        }
+        
+        .sort-btn.active {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            border-color: #FFD700;
+        }
+        
+        .sort-btn .sort-icon {
+            font-size: 0.9em;
+        }
+        
+        .sector-label {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            font-weight: 800;
+            font-size: clamp(0.55rem, 0.75vw, 0.7rem);
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid var(--metal-color);
+            min-width: 35px;
+            text-align: center;
+            z-index: 5;
+        }
+        
+        /* 段差（Zレイヤー）方式：健全性の視覚表現は削除済み */
+        /* wobble_levelの計算は継続するが、視覚的な差は表示しない */
+        
+        .metal-tag {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            font-weight: 700;
+            font-size: clamp(0.6rem, 0.9vw, 0.8rem);
+            padding: 3px 6px;
+            border-radius: 4px;
+            opacity: 0.95;
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: #FFD700;
+            text-align: center;
+            z-index: 5;
+            max-width: 70%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+        }
+        
+        .size-mega .ticker, .size-ultra-large .ticker, .size-extra-large .ticker {
+            font-size: clamp(1.5rem, 3.5vw, 3.8rem);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 6px;
+            margin-left: -0.25em;
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 4px 4px 12px rgba(0, 0, 0, 1);
+            align-self: flex-start;
+            width: calc(100% - 70px);
+            text-align: left;
+            padding-left: 30px; /* IBラベルとグレード表示との重複を避ける */
+        }
+        
+        .size-large .ticker, .size-medium .ticker {
+            font-size: clamp(1.2rem, 2.8vw, 3rem);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 6px;
+            margin-left: -0.25em;
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 4px 4px 12px rgba(0, 0, 0, 1);
+            align-self: flex-start;
+            width: calc(100% - 60px);
+            text-align: left;
+            padding-left: 25px; /* IBラベルとグレード表示との重複を避ける */
+        }
+        
+        .size-small .ticker, .size-mini .ticker, .size-micro .ticker {
+            font-size: clamp(1rem, 2.2vw, 2.2rem);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 4px;
+            margin-left: -0.25em;
+            line-height: 1;
+            text-shadow: 
+                0 0 40px rgba(0, 0, 0, 1),
+                0 0 30px rgba(0, 0, 0, 1),
+                0 0 20px rgba(0, 0, 0, 1),
+                5px 5px 15px rgba(0, 0, 0, 1),
+                -2px -2px 10px rgba(0, 0, 0, 1);
+            align-self: flex-start;
+            width: calc(100% - 50px);
+            text-align: left;
+            position: relative;
+            z-index: 10;
+            padding-left: 20px; /* IBラベルとグレード表示との重複を避ける */
+        }
+        
+        /* RSI表示スタイル */
+        .rsi-quadrant {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            z-index: 15;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2px;
+            background: transparent; /* 背景を透明にして周囲の色と同じにする */
+        }
+        
+        /* 国名ラベルがある場合のRSI位置調整 */
+        .dynamic-tile:has(.country-label) .rsi-quadrant {
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+        }
+        
+        .rsi-label {
+            font-size: clamp(0.9rem, 1.4vw, 1.4rem);
+            font-weight: 600;
+            color: #ffffff; /* 白色 */
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            line-height: 1;
+        }
+        
+        .rsi-value {
+            font-size: clamp(1.1rem, 1.8vw, 1.8rem);
+            font-weight: 800;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            line-height: 1;
+        }
+        
+        /* RSI値の色分け表示 */
+        .rsi-value.oversold {
+            color: #FFFF00; /* 明るい黄色 - RSI 30以下（オレンジ/赤背景でも見やすい） */
+        }
+        
+        .rsi-value.neutral {
+            color: #ffffff; /* 白色 - RSI 31-69 */
+        }
+        
+        .rsi-value.overbought {
+            color: #9333EA; /* 紫色 - RSI 70以上 */
+        }
+        
+        .size-small .change, .size-mini .change, .size-micro .change {
+            font-size: clamp(1rem, 2vw, 2.2rem);
+            font-weight: 900;
+            line-height: 1.1;
+            color: #ffffff;
+            margin-left: -0.5em;
+            text-shadow: 
+                0 0 50px rgba(0, 0, 0, 1),
+                0 0 40px rgba(0, 0, 0, 1),
+                0 0 30px rgba(0, 0, 0, 1),
+                0 0 20px rgba(0, 0, 0, 1),
+                6px 6px 18px rgba(0, 0, 0, 1),
+                -3px -3px 12px rgba(0, 0, 0, 1) !important;
+            filter: contrast(1.5) brightness(1.4);
+            width: calc(100% - 50px);
+            text-align: left;
+            align-self: flex-start;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .size-small .price, .size-mini .price, .size-micro .price {
+            font-size: clamp(0.7rem, 1.5vw, 1.6rem);
+            opacity: 0.9;
+            color: #ffffff;
+            margin-bottom: 2px;
+            margin-left: 1.2em;
+            font-weight: 700;
+            text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 3px 3px 10px rgba(0, 0, 0, 1);
+            width: calc(100% - 60px);
+            text-align: left;
+            align-self: flex-start;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .change {
+            font-size: clamp(1.1rem, 2.2vw, 2.6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            color: #ffffff;
+            margin-left: -0.5em;
+            text-shadow: 
+                0 0 40px rgba(0, 0, 0, 1),
+                0 0 30px rgba(0, 0, 0, 1),
+                0 0 20px rgba(0, 0, 0, 1),
+                0 0 10px rgba(0, 0, 0, 1),
+                5px 5px 15px rgba(0, 0, 0, 1),
+                -2px -2px 10px rgba(0, 0, 0, 0.8) !important;
+            filter: contrast(1.4) brightness(1.3);
+            width: calc(100% - 60px);
+            text-align: left;
+            align-self: flex-start;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .market-cap {
+            font-size: clamp(0.8rem, 1.3vw, 1.4rem);
+            opacity: 0.85;
+            color: #ffffff;
+            font-weight: 700;
+            margin-top: 3px;
+            margin-left: -0.5em;
+            text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 3px 3px 10px rgba(0, 0, 0, 1);
+            width: calc(100% - 60px);
+            text-align: left;
+            align-self: flex-start;
+        }
+        
+        .price {
+            font-size: clamp(0.9rem, 1.6vw, 1.8rem);
+            opacity: 0.9;
+            color: #ffffff;
+            margin-bottom: 2px;
+            margin-left: 1.2em;
+            font-weight: 700;
+            text-shadow: 0 0 30px rgba(0, 0, 0, 1), 0 0 20px rgba(0, 0, 0, 1), 3px 3px 10px rgba(0, 0, 0, 1);
+            width: calc(100% - 60px);
+            text-align: left;
+            align-self: flex-start;
+        }
+        
+        .gain-extreme { background: linear-gradient(135deg, #00FF00 0%, #32FF32 100%); border-color: #00FF00; }
+        .gain-high { background: linear-gradient(135deg, #00C851 0%, #00FF00 100%); border-color: #00C851; }
+        
+        .country-label {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background: #0066CC;
+            color: white;
+            font-size: clamp(0.6rem, 1vw, 0.8rem);
+            font-weight: 800;
+            padding: 2px 4px;
+            border-radius: 3px;
+            z-index: 30;
+            text-shadow: none;
+            box-shadow: 0 1px 3px rgba(0, 102, 204, 0.4);
+            min-width: 24px;
+            text-align: center;
+            border: 1px solid #004499;
+        }
+        
+        .country-label::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            height: 1px;
+            background: #0066CC;
+            z-index: -1;
+        }
+        
+        /* 評価グレード表示スタイル */
+        .grade-label {
+            position: absolute;
+            top: 28px;
+            left: 2px;
+            background: #00FFFF;
+            border: 2px solid #00FFFF;
+            border-radius: 4px;
+            padding: 2px 4px;
+            font-weight: 900;
+            font-size: clamp(0.6rem, 0.9vw, 0.8rem);
+            z-index: 15;
+            min-width: 20px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+        }
+        
+        /* グレード別フォントカラー（緑色背景でも見やすい色） */
+        .grade-label.grade-a {
+            color: #FFFFFF; /* 白色 - A（最も目立つ） */
+            background: #FF0000; /* 赤色背景 */
+            border-color: #FF0000;
+        }
+        
+        .grade-label.grade-a-minus {
+            color: #FFFFFF; /* 白色 - A- */
+            background: #FF4500; /* オレンジレッド背景 */
+            border-color: #FF4500;
+        }
+        
+        .grade-label.grade-b-plus {
+            color: #FFFFFF; /* 白色 - B+ */
+            background: #FF8C00; /* ダークオレンジ背景 */
+            border-color: #FF8C00;
+        }
+        
+        .grade-label.grade-b {
+            color: #FFFFFF; /* 白色 - B */
+            background: #FFD700; /* 金色背景 */
+            border-color: #FFD700;
+        }
+        
+        .grade-label.grade-b-minus {
+            color: #000000; /* 黒色 - B- */
+            background: #FFFF00; /* 黄色背景 */
+            border-color: #FFFF00;
+        }
+        .gain-medium { background: linear-gradient(135deg, #4CAF50 0%, #7CB342 100%); border-color: #4CAF50; }
+        .gain-low { background: linear-gradient(135deg, #8BC34A 0%, #9CCC65 100%); border-color: #8BC34A; }
+        .loss-low { background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%); border-color: #FF9800; }
+        .loss-medium { background: linear-gradient(135deg, #FF5722 0%, #F44336 100%); border-color: #FF5722; }
+        .loss-high { background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%); border-color: #D32F2F; }
+        .loss-extreme { background: linear-gradient(135deg, #B71C1C 0%, #8B0000 100%); border-color: #B71C1C; }
+        .neutral { background: linear-gradient(135deg, #607D8B 0%, #78909C 100%); border-color: #607D8B; }
+        
+        .gain-extreme .ticker, .gain-extreme .change, .gain-extreme .price, .gain-extreme .market-cap,
+        .gain-high .ticker, .gain-high .change, .gain-high .price, .gain-high .market-cap,
+        .gain-medium .ticker, .gain-medium .change, .gain-medium .price, .gain-medium .market-cap,
+        .gain-low .ticker, .gain-low .change, .gain-low .price, .gain-low .market-cap,
+        .loss-low .ticker, .loss-low .change, .loss-low .price, .loss-low .market-cap,
+        .loss-medium .ticker, .loss-medium .change, .loss-medium .price, .loss-medium .market-cap,
+        .loss-high .ticker, .loss-high .change, .loss-high .price, .loss-high .market-cap,
+        .loss-extreme .ticker, .loss-extreme .change, .loss-extreme .price, .loss-extreme .market-cap,
+        .neutral .ticker, .neutral .change, .neutral .price, .neutral .market-cap {
+            color: #ffffff !important;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 1), 3px 3px 8px rgba(0, 0, 0, 1) !important;
+        }
+        
+        .legend {
+            position: fixed;
+            bottom: 5px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 12px;
+            border-radius: 12px;
+            font-size: clamp(0.6rem, 1vw, 0.75rem);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+            min-width: 150px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+        
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 10000;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        }
+        
+        .notification.show { opacity: 1; transform: translateX(0); }
+        .notification.success { background: linear-gradient(45deg, #4CAF50, #66BB6A); }
+        .notification.error { background: linear-gradient(45deg, #F44336, #E57373); }
+        .notification.warning { background: linear-gradient(45deg, #FF9800, #FFB74D); }
+        
+        @media (max-width: 768px) {
+            .size-mega { width: 280px; height: 180px; }
+            .size-ultra-large { width: 240px; height: 160px; }
+            .size-extra-large, .size-large { width: 200px; height: 140px; }
+            .size-medium { width: 170px; height: 120px; }
+            .size-small, .size-mini, .size-micro { width: 130px; height: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">METALS TREEMAP</h1>
+            
+            <div class="disclaimer">
+                <p>このヒートマップは、相場の雰囲気や注目銘柄を把握するための参考情報です。</p>
+                <p>データ取得の都合上、表示が更新されない日や一部情報が欠ける場合があります。</p>
+                <p>あらかじめご了承ください。<span class="signature">omusubi</span></p>
+            </div>
+            
+            <div class="controls">
+                <div class="period-buttons">
+                    <button class="period-btn active" data-period="daily" onclick="changePeriod('daily')">📅 日次</button>
+                    <button class="period-btn" data-period="week" onclick="changePeriod('week')">📈 週次</button>
+                    <button class="period-btn" data-period="month" onclick="changePeriod('month')">📊 月次</button>
+                    <button class="period-btn" data-period="3month" onclick="changePeriod('3month')">📆 3ヶ月</button>
+                    <button class="period-btn" data-period="year" onclick="changePeriod('year')">📅 1年</button>
+                </div>
+                
+                <div class="data-warning" id="dataWarning" style="display: none;">
+                    <!-- 動的に表示 -->
+                </div>
+            </div>
+            
+            <div class="last-update">
+                最終更新: <span id="lastUpdate">-</span> | 
+                表示期間: <span id="currentPeriod">日次</span> |
+                総時価総額: <span id="marketCapStats">-</span>
+            </div>
+            
+            <!-- 市場開場時間表示 -->
+            <div class="market-hours">
+                <div class="market-hours-title">🌍 世界市場開場時間</div>
+                <div class="market-hours-info" id="marketHoursInfo"></div>
+                <div class="market-hours-chart">
+                    <div class="market-hours-header">
+                        <div class="market-name">市場</div>
+                        <div class="hours-grid" id="hoursGrid">
+                            <!-- JavaScriptで動的に生成 -->
+                        </div>
+                    </div>
+                    <div class="market-row">
+                        <div class="market-info">
+                            <span class="flag">🇺🇸</span>
+                            <span class="market-name">米国</span>
+                        </div>
+                        <div class="hours-bar us-hours" id="usHours"></div>
+                    </div>
+                    <div class="market-row">
+                        <div class="market-info">
+                            <span class="flag">🇨🇦</span>
+                            <span class="market-name">カナダ</span>
+                        </div>
+                        <div class="hours-bar ca-hours" id="caHours"></div>
+                    </div>
+                    <div class="market-row">
+                        <div class="market-info">
+                            <span class="flag">🇦🇺</span>
+                            <span class="market-name">オーストラリア</span>
+                        </div>
+                        <div class="hours-bar au-hours" id="auHours"></div>
+                    </div>
+                    <div class="market-row">
+                        <div class="market-info">
+                            <span class="flag">🇯🇵</span>
+                            <span class="market-name">日本</span>
+                        </div>
+                        <div class="hours-bar jp-hours" id="jpHours"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="metals-treemap">
+            <div class="metal-section gold-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🥇</div>
+                    <div class="metal-title">GOLD</div>
+                    <div class="metal-subtitle">金関連銘柄 (93銘柄)</div>
+                    <button class="sort-btn" data-section="gold" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="gold" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="goldContainer"></div>
+            </div>
+            
+            <div class="metal-section silver-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🥈</div>
+                    <div class="metal-title">SILVER</div>
+                    <div class="metal-subtitle">銀関連銘柄 (26銘柄)</div>
+                    <button class="sort-btn" data-section="silver" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="silver" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="silverContainer"></div>
+            </div>
+            
+            <div class="metal-section copper-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🧱</div>
+                    <div class="metal-title">COPPER</div>
+                    <div class="metal-subtitle">銅関連銘柄 (12銘柄)</div>
+                    <button class="sort-btn" data-section="copper" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="copper" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="copperContainer"></div>
+            </div>
+            
+            <div class="metal-section fertilizer-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🌱</div>
+                    <div class="metal-title">FERTILIZER</div>
+                    <div class="metal-subtitle">肥料関連銘柄 (3銘柄)</div>
+                    <button class="sort-btn" data-section="fertilizer" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="fertilizer" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="fertilizerContainer"></div>
+            </div>
+            
+            <div class="metal-section platinum-section">
+                <div class="metal-header">
+                    <div class="metal-icon">💎</div>
+                    <div class="metal-title">PLATINUM/PGM</div>
+                    <div class="metal-subtitle">プラチナ・PGM関連銘柄 (4銘柄)</div>
+                    <button class="sort-btn" data-section="platinum" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="platinum" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="platinumContainer"></div>
+            </div>
+            
+            <div class="metal-section lithium-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🔋</div>
+                    <div class="metal-title">LITHIUM</div>
+                    <div class="metal-subtitle">リチウム関連銘柄</div>
+                    <button class="sort-btn" data-section="lithium" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="lithium" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="lithiumContainer"></div>
+            </div>
+            
+            <div class="metal-section uranium-section">
+                <div class="metal-header">
+                    <div class="metal-icon">☢️</div>
+                    <div class="metal-title">URANIUM</div>
+                    <div class="metal-subtitle">ウラン関連銘柄</div>
+                    <button class="sort-btn" data-section="uranium" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="uranium" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="uraniumContainer"></div>
+            </div>
+            
+            <div class="metal-section nickel-section">
+                <div class="metal-header">
+                    <div class="metal-icon">⚙️</div>
+                    <div class="metal-title">NICKEL</div>
+                    <div class="metal-subtitle">ニッケル関連銘柄</div>
+                    <button class="sort-btn" data-section="nickel" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="nickel" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="nickelContainer"></div>
+            </div>
+            
+            <div class="metal-section ree-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🧲</div>
+                    <div class="metal-title">REE</div>
+                    <div class="metal-subtitle">レアアース関連銘柄</div>
+                    <button class="sort-btn" data-section="ree" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="ree" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="reeContainer"></div>
+            </div>
+            
+            <div class="metal-section titanium-section">
+                <div class="metal-header">
+                    <div class="metal-icon">🛩️</div>
+                    <div class="metal-title">TITANIUM</div>
+                    <div class="metal-subtitle">チタン関連銘柄</div>
+                    <button class="sort-btn" data-section="titanium" data-sort-type="changePercent" title="％上昇率順で並べ替え">
+                        <span class="sort-icon">📈</span>
+                        <span class="sort-text">％上昇率順</span>
+                    </button>
+                    <button class="sort-btn" data-section="titanium" data-sort-type="rsi" title="RSI順で並べ替え">
+                        <span class="sort-icon">📊</span>
+                        <span class="sort-text">RSI順</span>
+                    </button>
+                </div>
+                <div class="tiles-container" id="titaniumContainer"></div>
+            </div>
+        </div>
+        
+        <div class="legend" id="colorLegend">
+            <div class="legend-item"><div class="legend-color gain-extreme"></div><span id="legend-gain-extreme">+20%+</span></div>
+            <div class="legend-item"><div class="legend-color gain-high"></div><span id="legend-gain-high">+4%+</span></div>
+            <div class="legend-item"><div class="legend-color gain-medium"></div><span id="legend-gain-medium">+2~4%</span></div>
+            <div class="legend-item"><div class="legend-color gain-low"></div><span id="legend-gain-low">0~+2%</span></div>
+            <div class="legend-item"><div class="legend-color loss-low"></div><span id="legend-loss-low">0~-2%</span></div>
+            <div class="legend-item"><div class="legend-color loss-medium"></div><span id="legend-loss-medium">-2~-5%</span></div>
+            <div class="legend-item"><div class="legend-color loss-high"></div><span id="legend-loss-high">-5%-</span></div>
+            <div class="legend-item"><div class="legend-color loss-extreme"></div><span id="legend-loss-extreme">-20%-</span></div>
+        </div>
+    </div>
+    
+    <script>
+        let currentPeriod = 'daily';
+        let isUpdating = false;
+        let stocksData = [];
+        let ipoSymbolsInfo = {};
+        // ユーザー用: サーバーAPIは使用せず、直接ファイルを読み込む
+        const DATA_PATH = 'data/joined';
+        
+        const metalSymbols = {
+            gold: ['NEM', 'B', 'AEM', 'KGC', 'IAG', 'MUX', 'SSRM', 'WPM', 'GDX', 'GDXJ', 'NUGT', '2036', 'ARMN', 'BTG', 'NFGC', 'PPTA', 'USAU', 'AUMB', 'LG', 'OMI', 'TSK', 'AUMBF', 'LGCXF', 'TSKFF', 'ASE', 'CERT', 'DNRSF', 'HSTR', 'ITR', 'JAG', 'MSA', 'NEXG', 'NOM', 'ORE', 'PZG', 'RVG', 'RUA', 'STLR', 'SGO', 'WRLG', 'ALK', 'AAUC', 'AMX', 'ARIS', 'ORA', 'AUC', 'BGD', 'BGL', 'BC8', 'BOGO', 'BTR', 'CBR', 'CEL', 'CKG', 'FVL', 'GMIN', 'GAU', 'GGO', 'GGR', 'THM', 'LUCA', 'MKO', 'MAE', 'MFG', 'MAU', 'NFG', 'NCX', 'PGLD', 'PRU', 'RIO', 'STN', 'SCOT', 'SICO', 'STGO', 'TSO', 'TAU', 'THX', 'TXG', 'VAU', 'WGX', 'WGO'],
+            silver: ['AAG', 'USA', 'APM', 'ASL', 'ASM', 'AYA', 'BNKR', 'DSV', 'EXK', 'AG', 'GRSL', 'GGD', 'GSVR', 'HOC', 'MMA', 'PAAS', 'SCZ', 'AGMR', 'SVRS', 'SLVR', 'SILV', 'SKE', 'SS1', 'VZLA', 'HL', 'CDE', 'IVR', 'SVM', 'SLV', 'SIL', '1542', '1673'],
+            copper: ['FCX', 'SCCO', 'TECK', 'BHP', 'RIO_CU', 'ERO', 'COPX', 'ICOP', 'PPP', 'BMM', 'TMQ'],
+            fertilizer: ['NTR', 'MOS', 'IPI'],
+            platinum: ['SBSW', 'PLG', '1541', '1674'],
+            lithium: ['ALB', 'LAC', 'SQM', 'LAR', 'SGML', 'LIT', 'CRML'],
+            uranium: ['CCJ', 'NXE', 'DNN', 'UEC', 'LEU', 'URA', 'UUUU', 'OKLO', 'SMR'],
+            nickel: ['VALE'],
+            ree: ['MP', 'REMX', 'AII'],
+            titanium: ['IPX', 'TROX']
+        };
+        
+        const allSymbols = Object.values(metalSymbols).flat();
+        
+        // 有名人評価グレードデータ（評価がついている銘柄のみ）
+        const celebrityGrades = {
+            // 銀セクター（更新版）
+            'AAG': 'B',      // Aftermath Silver
+            'USA': 'B+',     // Americas Gold & Silver Corp
+            'APM': 'B+',     // Andean Precious Metals Corp (新規追加)
+            'ASL': 'B+',     // Andean Silver Ltd (新規追加)
+            'ASM': 'A-',     // Avino Silver & Gold Mines Ltd
+            'AYA': 'A-',     // Aya Gold & Silver Inc
+            'BNKR': 'B',     // Bunker Hill Mining Corp
+            'DSV': 'B+',     // Discovery Silver Corp
+            'EXK': 'A-',     // Endeavour Silver Corp
+            'AG': 'A-',      // First Majestic Silver Corp
+            'GRSL': 'B',     // GR Silver Mining Ltd (新規追加)
+            'GGD': 'B+',     // Gogold Resources (新規追加)
+            'GSVR': 'B-',    // Guanajuato Silver
+            'MMA': 'B',      // Maronan Metals Ltd (新規追加)
+            'PAAS': 'A',     // Pan American Silver Corp
+            'SCZ': 'B+',     // Santacruz Silver Mining Ltd
+            'AGMR': 'B',     // Silver Mountain Resources Inc (新規追加)
+            'SVRS': 'B',     // Silver Storm Mining Ltd (新規追加)
+            'SLVR': 'B+',    // Silver Tiger Metals (新規追加)
+            'SILV': 'B+',    // Silvercorp Metals Inc
+            'SKE': 'B+',     // Skeena Gold & Silver (新規追加)
+            'SS1': 'B-',     // Sun Silver Ltd (新規追加)
+            'VZLA': 'A-',    // Vizsla Silver Corp
+            'SVM': 'B+',     // Silvercorp Metals Inc
+            // 既存の銀銘柄
+            'HL': 'B+',
+            'CDE': 'B',
+            'IVR': 'B-',
+            // その他のセクター（Gold）
+            'AUMB': 'A-',    // 1911 Gold Corp
+            'ASE': 'B',      // Asante Gold Corp
+            'CERT': 'B',     // Cerrado Gold Inc
+            'DNRSF': 'B-',   // Denarius Metals (DNRからDNRSFに変更)
+            'HSTR': 'B+',    // Heliostar Metals Ltd (B → B+)
+            'ITR': 'B',      // Integra Resources (B+ → B)
+            'JAG': 'B+',     // Jaguar Mining Inc
+            'MSA': 'B+',     // Mineros S.A.
+            'NEXG': 'A-',    // NexGold Mining Corp
+            'ORE': 'B-',     // Orezono Gold Corp
+            'PZG': 'B',      // Paramount Gold Nevada Corp
+            'RVG': 'B+',     // Revival Gold Inc
+            'RUA': 'B',      // Rua Gold Inc
+            'STLR': 'B',     // STLLR Gold
+            'AGX': 'B-',     // Silver X Mining
+            'SGO': 'B',      // Sonoro Gold Corp
+            'TSK': 'B',      // Talisker Resources Ltd
+            'WRLG': 'B+',    // West Red Lake Gold Mines Inc
+            'OMI': 'B',      // Orosur Mining Inc
+            'PPTA': 'B+',    // Perpetua Resources Corp
+            'USAU': 'B+',    // US Gold Corp
+            'SSRM': 'B+',    // SSR Mining Inc
+            // Goldセクター新規追加
+            'ALK': 'B',      // Alkane Resources Ltd
+            'AAUC': 'B+',    // Allied Gold Corp
+            'AMX': 'B',      // Amex Exploration Inc
+            'ARIS': 'A-',    // Aris Mining Corp
+            'ORA': 'B+',     // Aura Minerals Inc
+            'AUC': 'B+',     // Ausgold Ltd
+            'BGD': 'B',      // Barton Gold Ltd
+            'BGL': 'B+',     // Bellevue Gold
+            'BC8': 'B+',     // Black Cat Syndicate Ltd
+            'BOGO': 'B',     // Borealis Mining Company Ltd (正式ティッカー: BOGO)
+            'BTR': 'B',      // Brightstar Resources Ltd
+            'CBR': 'B',      // Cabral Gold
+            'CEL': 'B',      // Challenger Gold
+            'CKG': 'B',      // Chesapeake Gold Corp
+            'FVL': 'A-',     // Freegold Ventures Ltd
+            'GMIN': 'B+',    // G Mining Ventures Corp
+            'GAU': 'B',      // Galiano Gold Inc
+            'GGO': 'B',      // Galleon Gold Corp
+            'GGR': 'B+',     // Greatland Resources Ltd
+            'THM': 'B',      // Intl. Tower Hill Mines Ltd
+            'LUCA': 'B',     // Luca Mining
+            'MKO': 'B+',     // Mako Mining Corp
+            'MAE': 'B',      // Maritime Resources Corp
+            'MFG': 'B',      // Mayfair Gold Corp
+            'MAU': 'B+',     // Montage Gold Corp
+            'NFG': 'B',      // New Found Gold Corp
+            'NCX': 'B+',     // Northisle Copper & Gold Inc
+            'PGLD': 'B',     // P2 Gold Inc
+            'PRU': 'A-',     // Perseus Mining Ltd
+            'RIO': 'B',      // Rio2 Ltd (Gold)
+            'STN': 'B',      // Saturn Metals Ltd
+            'SCOT': 'B',     // Scottie Resources
+            'SICO': 'B',     // Silverco Mining Ltd
+            'STGO': 'B-',    // Steppe Gold Ltd
+            'TSO': 'B',      // Tesoro Gold
+            'TAU': 'B',      // Thesis Gold Inc
+            'THX': 'B',      // Thor Explorations Ltd
+            'TXG': 'A-',     // Torex Gold Resources Inc
+            'VAU': 'A-',     // Vault Minerals
+            'WGX': 'A-',     // Westgold Resources Ltd
+            'WGO': 'B'       // White Gold Corp
+        };
+        
+        // 企業名マッピング
+        const companyNames = {
+            // 🇨🇦 カナダ（TSX / TSXV）- 銀セクター
+            'AAG': 'Aftermath Silver',
+            'USA': 'Americas Gold & Silver Corp',
+            'APM': 'Andean Precious Metals Corp',
+            'ASL': 'Andean Silver Ltd',  // ASR → ASLに更新
+            'ASM': 'Avino Silver & Gold Mines Ltd',
+            'AYA': 'Aya Gold & Silver Inc',
+            'DSV': 'Discovery Silver Corp',
+            'GRSL': 'GR Silver Mining Ltd',
+            'GGD': 'Gogold Resources',
+            'GSVR': 'Guanajuato Silver',
+            'MMA': 'Maronan Metals Ltd',  // MAR → MMAに更新
+            'SCZ': 'Santacruz Silver Mining Ltd',
+            'AGMR': 'Silver Mountain Resources Inc',
+            'SVRS': 'Silver Storm Mining Ltd',
+            'SLVR': 'Silver Tiger Metals',
+            'SKE': 'Skeena Gold & Silver',
+            'SS1': 'Sun Silver Ltd',  // SUNS → SS1に更新
+            'VZLA': 'Vizsla Silver Corp',
+            
+            // その他の銀銘柄
+            'BNKR': 'Bunker Hill Mining Corp',  // BHLL → BNKRに更新
+            'EXK': 'Endeavour Silver Corp',
+            'AG': 'First Majestic Silver Corp',
+            'PAAS': 'Pan American Silver Corp',
+            'SILV': 'Silvercorp Metals Inc',
+            'HL': 'Hecla Mining Company',
+            'CDE': 'Coeur Mining',
+            'IVR': 'Invesco Mortgage Capital Inc',
+            'SVM': 'Silvercorp Metals Inc',
+            'SS1': 'Sun Silver Ltd',
+            
+            // 🇨🇦 カナダ（TSX / TSXV）- 金セクター
+            'TSK': 'Talisker Resources Ltd',
+            'LG': 'Lahontan Gold Corp',
+            'OMI': 'Orosur Mining Inc',
+            'AUMB': '1911 Gold Corporation (TSXV:AUMB)',
+            'AUMBF': '1911 Gold Corporation (OTCQX:AUMBF)',
+            'LGCXF': 'Omai Gold Mines Corp (OTCQX:LGCXF)',
+            'TSKFF': 'Talisker Resources Ltd (OTCQX:TSKFF)',
+            
+            // 🇦🇺 オーストラリア（ASX）
+            'MMA': 'Maronan Metals Ltd',
+            
+            // 🇨🇦 金セクターその他
+            'ASE': 'Asante Gold Corp',
+            'PPTA': 'Perpetua Resources Corp',
+            'USAU': 'US Gold Corp',
+            'SSRM': 'SSR Mining Inc',
+            'CERT': 'Cerrado Gold Inc',
+            'DNR': 'Denarius Metals',
+            'DNRSF': 'Denarius Metals',
+            'HSTR': 'Heliostar Metals Ltd',
+            'ITR': 'Integra Resources',
+            'JAG': 'Jaguar Mining Inc',
+            'MSA': 'Mineros S.A.',
+            'NEXG': 'NexGold Mining Corp',
+            'ORE': 'Orezono Gold Corp',
+            'PZG': 'Paramount Gold Nevada Corp',
+            'RVG': 'Revival Gold Inc',
+            'RUA': 'Rua Gold Inc',
+            'STLR': 'STLLR Gold',
+            'AGX': 'Silver X Mining',
+            'SGO': 'Sonoro Gold Corp',
+            'WRLG': 'West Red Lake Gold Mines Inc',
+            // Goldセクター新規追加（オーストラリアASX）
+            'ALK': 'Alkane Resources Ltd',
+            'AUC': 'Ausgold Ltd',
+            'BGD': 'Barton Gold Ltd',
+            'BGL': 'Bellevue Gold',
+            'BC8': 'Black Cat Syndicate Ltd',
+            'BTR': 'Brightstar Resources Ltd',
+            'CEL': 'Challenger Gold',
+            'STN': 'Saturn Metals Ltd',
+            'TSO': 'Tesoro Gold',
+            'VAU': 'Vault Minerals',
+            'WGX': 'Westgold Resources Ltd',
+            // Goldセクター新規追加（カナダTSX）
+            'AAUC': 'Allied Gold Corp',
+            'ARIS': 'Aris Mining Corp',
+            'ORA': 'Aura Minerals Inc',
+            'FVL': 'Freegold Ventures Ltd',
+            'GMIN': 'G Mining Ventures Corp',
+            'GAU': 'Galiano Gold Inc',
+            'MAU': 'Montage Gold Corp',
+            'PRU': 'Perseus Mining Ltd',
+            'RIO': 'Rio2 Ltd',
+            'STGO': 'Steppe Gold Ltd',
+            'TXG': 'Torex Gold Resources Inc',
+            // Goldセクター新規追加（カナダTSX-V）
+            'AMX': 'Amex Exploration Inc',
+            'BOGO': 'Borealis Mining Company Ltd',
+            'CBR': 'Cabral Gold',
+            'CKG': 'Chesapeake Gold Corp',
+            'GGO': 'Galleon Gold Corp',
+            'LUCA': 'Luca Mining',
+            'MKO': 'Mako Mining Corp',
+            'MAE': 'Maritime Resources Corp',
+            'MFG': 'Mayfair Gold Corp',
+            'NFG': 'New Found Gold Corp',
+            'NCX': 'Northisle Copper & Gold Inc',
+            'PGLD': 'P2 Gold Inc',
+            'SCOT': 'Scottie Resources',
+            'SICO': 'Silverco Mining Ltd',
+            'TAU': 'Thesis Gold Inc',
+            'THX': 'Thor Explorations Ltd',
+            'WGO': 'White Gold Corp',
+            // Goldセクター新規追加（その他）
+            'GGR': 'Greatland Resources Ltd',
+            'THM': 'Intl. Tower Hill Mines Ltd',
+            
+            // 🇺🇸 米国・その他
+            'AEM': 'Agnico Eagle Mines Limited',
+            'AII': 'American International Industries Inc.',
+            'ALB': 'Albemarle Corporation',
+            'ARMN': 'Aramark',
+            'B': 'Brookfield Corporation',
+            'BHP': 'BHP Group Limited',
+            'BTG': 'B2Gold Corp.',
+            'CCJ': 'Cameco Corporation',
+            'COPX': 'Global X Copper Miners ETF',
+            'CRML': 'Critical Elements Lithium Corporation',
+            'DNN': 'Denison Mines Corp.',
+            'ERO': 'Ero Copper Corp.',
+            'FCX': 'Freeport-McMoRan Inc.',
+            'GDX': 'VanEck Vectors Gold Miners ETF',
+            'GDXJ': 'VanEck Vectors Junior Gold Miners ETF',
+            'IAG': 'IAMGOLD Corporation',
+            'ICOP': 'IC Potash Corp.',
+            'IPI': 'Intrepid Potash, Inc.',
+            'IPX': 'IperionX Limited',
+            'KGC': 'Kinross Gold Corporation',
+            'LAC': 'Lithium Americas Corp.',
+            'LAR': 'Laramide Resources Ltd.',
+            'LEU': 'Centrus Energy Corp.',
+            'LIT': 'Global X Lithium & Battery Tech ETF',
+            'MOS': 'The Mosaic Company',
+            'MP': 'MP Materials Corp.',
+            'MUX': 'McEwen Mining Inc.',
+            'NEM': 'Newmont Corporation',
+            'NFGC': 'New Found Gold Corp.',
+            'NTR': 'Nutrien Ltd.',
+            'NUGT': 'Direxion Daily Gold Miners Bull 3x Shares ETF',
+            'NXE': 'NexGen Energy Ltd.',
+            'OKLO': 'Oklo Resources Ltd.',
+            'PAAS': 'Pan American Silver Corp.',
+            'PLG': 'Platinum Group Metals Ltd.',
+            'PPTA': 'Perpetua Resources Corp.',
+            'REMX': 'VanEck Rare Earth/Strategic Metals ETF',
+            'RIO_CU': 'Rio Tinto Group',
+            'SBSW': 'Sibanye Stillwater Limited',
+            'SCCO': 'Southern Copper Corporation',
+            // Copperセクター新規追加（KCDは削除 - データ取得不可）
+            'PPP': 'Prospector Metals',
+            'BMM': 'Black Mammoth Metals',
+            'TMQ': 'Trilogy Metals',
+            'SGML': 'Sigma Lithium Corporation',
+            'SIL': 'Global X Silver Miners ETF',
+            'SKE': 'Skeena Resources Ltd.',
+            'SLV': 'iShares Silver Trust ETF',
+            'SLVR': 'Silver Tiger Metals Inc.',
+            'SMR': 'Small Modular Reactor Corp.',
+            'SQM': 'Sociedad Química y Minera de Chile',
+            'SSRM': 'SSR Mining Inc.',
+            'TECK': 'Teck Resources Limited',
+            'TROX': 'Tronox Holdings plc',
+            'UEC': 'Uranium Energy Corp.',
+            'URA': 'Global X Uranium ETF',
+            'USAU': 'U.S. Gold Corp.',
+            'UUUU': 'Energy Fuels Inc.',
+            'VALE': 'Vale S.A.',
+            'VZLA': 'Vizsla Silver Corp.',
+            'WPM': 'Wheaton Precious Metals Corp.',
+            
+            // 🇯🇵 日本
+            '2036': 'NEXT NOTES 金先物 ダブル・ブル ETN',
+            '1542': '銀現物連動ETF',
+            '1673': '銀価格連動ETF（WisdomTree）',
+            '1541': 'プラチナ現物連動ETF',
+            '1674': '白金ETF'
+        };
+        
+        // グレードクラスを取得する関数
+        function getGradeClass(grade) {
+            switch(grade) {
+                case 'A': return 'grade-a';
+                case 'A-': return 'grade-a-minus';
+                case 'B+': return 'grade-b-plus';
+                case 'B': return 'grade-b';
+                case 'B-': return 'grade-b-minus';
+                default: return 'grade-b';
+            }
+        }
+        
+        // グレード表示HTMLを生成する関数
+        function createGradeHtml(symbol) {
+            const grade = celebrityGrades[symbol];
+            if (!grade) return '';
+            
+            const gradeClass = getGradeClass(grade);
+            return `<div class="grade-label ${gradeClass}">${grade}</div>`;
+        }
+        
+        function updateIPOWarning(period) {
+            // IPO警告機能を無効化（常に非表示）
+            const warningDiv = document.getElementById('dataWarning');
+            if (warningDiv) {
+                warningDiv.style.display = 'none';
+            }
+        }
+        
+        const marketCapEstimates = {
+            'BHP': 120000, 'RIO': 95000, 'VALE': 55000, 'FCX': 60000, 'NEM': 45000, 'SCCO': 45000, 'B': 30000,
+            'CCJ': 25000, 'AEM': 25000, 'ALB': 12000, 'NTR': 20000, 'SQM': 11000,
+            'GDX': 18000, 'SLV': 15000, 'WPM': 12000, 'TECK': 10000, 'KGC': 8500, 'GDXJ': 8000, 'NXE': 8000,
+            'MOS': 7500, 'SSRM': 6000, 'PAAS': 6000, 'IAG': 4000, 'SBSW': 3000, 'LAC': 2800, 'MP': 2600,
+            'DNN': 2500, 'AG': 2500, 'HL': 2000, 'ERO': 1600,
+            'CDE': 1500, 'UUUU': 1500, 'IPI': 1400, 'COPX': 1200, 'UEC': 1200, 'LIT': 1100, 'URA': 1000, 'LEU': 900,
+            'REMX': 900, 'SIL': 800, 'PLG': 600, 'MUX': 600, 'LAR': 550, 'SGML': 500,
+            'NUGT': 500, 'OKLO': 400, 'EXK': 400, 'AII': 350, 'SMR': 350, 'IPX': 300, '2036': 300,
+            // Copperセクター新規追加（時価総額推定値）（KCDは削除 - データ取得不可）
+            'PPP': 120, 'BMM': 100, 'TMQ': 200,
+            '1542': 250, '1673': 200, '1541': 150, '1674': 150,
+            // Goldセクター新規追加（時価総額推定値）
+            'ALK': 400, 'AAUC': 600, 'AMX': 150, 'ARIS': 1200, 'ORA': 500, 'AUC': 200, 'BGD': 100,
+            'BGL': 800, 'BC8': 120, 'BOGO': 80, 'BTR': 90, 'CBR': 100, 'CEL': 150, 'CKG': 300,
+            'DNRSF': 200, 'FVL': 400, 'GMIN': 600, 'GAU': 350, 'GGO': 200, 'GGR': 500, 'THM': 400,
+            'LUCA': 250, 'MKO': 300, 'MAE': 80, 'MFG': 200, 'MAU': 400, 'NFG': 500, 'NCX': 300,
+            'PGLD': 100, 'PRU': 2000, 'RIO': 250, 'STN': 80, 'SCOT': 120, 'SICO': 150, 'STGO': 300,
+            'TSO': 100, 'TAU': 200, 'THX': 400, 'TXG': 800, 'VAU': 400, 'WGX': 600, 'WGO': 200,
+            'TROX': 200, 'BTG': 3500, 'ARMN': 1200, 'NFGC': 1800, 'PPTA': 600, 'USAU': 400,
+            'SVM': 800, 'SKE': 700, 'VZLA': 500, 'CRML': 450,
+            'AUMB': 150, 'LG': 200, 'OMI': 180, 'TSK': 300, 'AYA': 250,
+            // 銀関連銘柄（更新版）
+            'AAG': 100, 'USA': 150, 'APM': 120, 'ASR': 90, 'ASM': 400,
+            'BNKR': 80, 'DSV': 500, 'EXK': 400, 'AG': 2500, 'GRSL': 120,
+            'GGD': 350, 'GSVR': 100, 'MMA': 100, 'PAAS': 6000,
+            'SCZ': 80, 'AGMR': 60, 'SVRS': 50, 'SLVR': 150, 'SILV': 800,
+            'SS1': 50,
+            // 既存の銀銘柄
+            'HL': 2000, 'CDE': 1500, 'IVR': 80, 'SVM': 800,
+            'SLV': 15000, 'SIL': 800, 'SS1': 50,
+            // その他の銘柄
+            'MMA': 100, 'IVR': 80,
+            // ETF銘柄
+            'ICOP': 200
+        };
+        
+        function calculateTileSize(marketCap) {
+            if (marketCap >= 60000) return 'mega';
+            if (marketCap >= 30000) return 'ultra-large';
+            if (marketCap >= 20000) return 'extra-large';
+            if (marketCap >= 10000) return 'large';
+            if (marketCap >= 5000) return 'medium';
+            if (marketCap >= 2000) return 'small';
+            if (marketCap >= 1000) return 'mini';
+            return 'micro';
+        }
+        
+        // RSI値に基づく色分けクラスを取得する関数
+        function getRSIColorClass(rsi) {
+            if (rsi === null || rsi === undefined) return 'neutral';
+            if (rsi <= 30) return 'oversold';
+            if (rsi >= 70) return 'overbought';
+            return 'neutral';
+        }
+        
+        // 段差（Zレイヤー）方式：SVGは不要、CSSクラスで制御
+
+        function createRSIQuadrantSVG(sentiment) {
+            if (!sentiment || sentiment.rsi === null) {
+                return '';
+            }
+            
+            const { x, y, color, rsi, isOverbought, isOversold, isOptimistic } = sentiment;
+            
+            const dotX = x * 20;
+            const dotY = -y * 20;
+            
+            let quadrantColors = {
+                topRight: isOptimistic && isOverbought ? '#ffd8d8' : '#f5f5f5',
+                topLeft: isOptimistic && isOversold ? '#d6f2d6' : '#f5f5f5',
+                bottomLeft: !isOptimistic && isOversold ? '#ffe6d6' : '#f5f5f5',
+                bottomRight: !isOptimistic && isOverbought ? '#f5c7c7' : '#f5f5f5'
+            };
+            
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-30 -30 60 60">
+                    <!-- 4象限の背景 -->
+                    <path d="M0 0 L20 -20 A28 28 0 0 1 20 20 Z" fill="${quadrantColors.topRight}" opacity="0.8"/>
+                    <path d="M0 0 L-20 -20 A28 28 0 0 0 20 -20 Z" fill="${quadrantColors.topLeft}" opacity="0.8"/>
+                    <path d="M0 0 L-20 20 A28 28 0 0 0 -20 -20 Z" fill="${quadrantColors.bottomLeft}" opacity="0.8"/>
+                    <path d="M0 0 L20 20 A28 28 0 0 1 -20 20 Z" fill="${quadrantColors.bottomRight}" opacity="0.8"/>
+                    
+                    <!-- 外円 -->
+                    <circle r="28" fill="none" stroke="#999" stroke-width="1" opacity="0.5"/>
+                    
+                    <!-- 中心円 -->
+                    <circle r="8" fill="none" stroke="#666" stroke-width="1" opacity="0.4"/>
+                    
+                    <!-- 軸線 -->
+                    <line x1="-28" y1="0" x2="28" y2="0" stroke="#666" stroke-width="0.5" stroke-dasharray="1 1" opacity="0.4"/>
+                    <line x1="0" y1="-28" x2="0" y2="28" stroke="#666" stroke-width="0.5" stroke-dasharray="1 1" opacity="0.4"/>
+                    
+                    <!-- 銘柄ポイント - 紫色 -->
+                    <circle cx="${dotX}" cy="${dotY}" r="4.5" fill="#9333EA" stroke="#fff" stroke-width="2" opacity="1">
+                        <animate attributeName="r" values="4.5;6;4.5" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- RSI値表示 - 大きめ -->
+                    <text x="0" y="31" text-anchor="middle" font-size="12" font-weight="bold" fill="#9333EA" opacity="1">
+                        ${rsi.toFixed(0)}
+                    </text>
+                </svg>
+            `;
+            
+            return svg;
+        }
+        
+        function createDynamicTile(stockData) {
+            const tile = document.createElement('div');
+            tile.className = 'dynamic-tile';
+            tile.onclick = () => showDetails(stockData.symbol);
+            
+            const changeValue = stockData.changePercent;
+            if (changeValue !== null && changeValue !== undefined && !isNaN(changeValue)) {
+                const thresholds = {
+                    'daily': { extreme: 20, high: 4, medium: 2 },
+                    'week': { extreme: 30, high: 10, medium: 5 },
+                    'month': { extreme: 50, high: 20, medium: 10 },
+                    '3month': { extreme: 75, high: 30, medium: 15 },
+                    'year': { extreme: 100, high: 50, medium: 25 }
+                };
+                const t = thresholds[currentPeriod] || thresholds['daily'];
+                
+                if (changeValue > 0) {
+                    if (changeValue >= t.extreme) tile.classList.add('gain-extreme');
+                    else if (changeValue >= t.high) tile.classList.add('gain-high');
+                    else if (changeValue >= t.medium) tile.classList.add('gain-medium');
+                    else tile.classList.add('gain-low');
+                } else if (changeValue < 0) {
+                    const absValue = Math.abs(changeValue);
+                    if (absValue >= t.extreme) tile.classList.add('loss-extreme');
+                    else if (absValue >= t.high) tile.classList.add('loss-high');
+                    else if (absValue >= t.medium) tile.classList.add('loss-medium');
+                    else tile.classList.add('loss-low');
+                } else {
+                    tile.classList.add('neutral');
+                }
+            } else {
+                tile.classList.add('neutral');
+            }
+            
+            // 日本株の時価総額をドル換算（1ドル = 150円で換算）
+            const isJapaneseStock = ['2036', '1541', '1542', '1673', '1674'].includes(stockData.symbol);
+            let marketCap = stockData.marketCap || marketCapEstimates[stockData.symbol] || 1000;
+            if (isJapaneseStock && stockData.currency === 'JPY') {
+                // 円建て時価総額をドル換算（1ドル = 150円）
+                marketCap = marketCap / 150;
+            }
+            const sizeClass = calculateTileSize(marketCap);
+            tile.classList.add(`size-${sizeClass}`);
+            
+            let sectorLabel = 'CORP';
+            if (['GDX', 'GDXJ', 'NUGT', 'SIL', 'SLV', 'URA', 'COPX', 'LIT', 'REMX', '2036', '1541', '1542', '1673', '1674'].includes(stockData.symbol)) {
+                sectorLabel = 'ETF';
+            }
+            
+            const changeStr = stockData.changePercent !== null && stockData.changePercent !== undefined ? 
+                (stockData.changePercent >= 0 ? '+' : '') + stockData.changePercent.toFixed(2) + '%' : '待機中';
+            
+            // 日本株の時価総額表示用（元の円建て値を使用）
+            const originalMarketCap = stockData.marketCap || marketCapEstimates[stockData.symbol] || 1000;
+            const marketCapFormatted = stockData.marketCapFormatted || 
+                (isJapaneseStock ? 
+                    `¥${(originalMarketCap / 1000).toFixed(1)}B` : 
+                    `$${(marketCap / 1000).toFixed(1)}B`);
+            const metalTag = stockData.metalTag || 'N/A';
+            
+            const priceFormatted = stockData.priceFormatted || 
+                (stockData.symbol === '2036' ? 
+                    `¥${stockData.price ? stockData.price.toFixed(0) : '0'}` : 
+                    `$${stockData.price ? stockData.price.toFixed(2) : '0.00'}`);
+            
+            const canvas = document.createElement('canvas');
+            canvas.className = 'chart-canvas';
+            tile.appendChild(canvas);
+            
+            // 日本株（JP）のラベルは非表示
+            const countryLabelHtml = (stockData.countryLabel && stockData.countryLabel !== 'JP') ? 
+                `<div class="country-label">${stockData.countryLabel}</div>` : '';
+            const gradeHtml = createGradeHtml(stockData.symbol);
+            
+            // デバッグ用ログ（強化版）
+            console.log(`銘柄: ${stockData.symbol}, 国名ラベル: ${stockData.countryLabel || 'なし'}, 評価: ${celebrityGrades[stockData.symbol] || 'なし'}`);
+            
+            if (stockData.countryLabel) {
+                console.log(`✅ 国名ラベル表示: ${stockData.symbol} -> ${stockData.countryLabel}`);
+            } else {
+                console.log(`❌ 国名ラベルなし: ${stockData.symbol}`);
+            }
+            
+            if (celebrityGrades[stockData.symbol]) {
+                console.log(`✅ 評価グレード表示: ${stockData.symbol} -> ${celebrityGrades[stockData.symbol]}`);
+            } else {
+                console.log(`❌ 評価グレードなし: ${stockData.symbol}`);
+            }
+            
+            // テスト用：TSK, LG, OMI, AUMBに強制的に国名ラベルを表示
+            let testCountryLabelHtml = '';
+            if (['TSK', 'LG', 'OMI', 'AUMB'].includes(stockData.symbol)) {
+                testCountryLabelHtml = '<div class="country-label">CA</div>';
+                console.log(`🔧 テスト用国名ラベル強制表示: ${stockData.symbol} -> CA`);
+            } else if (['HOC'].includes(stockData.symbol)) {
+                testCountryLabelHtml = '<div class="country-label">GB</div>';
+                console.log(`🔧 テスト用国名ラベル強制表示: ${stockData.symbol} -> GB`);
+            } else if (['MMA', 'SS1'].includes(stockData.symbol)) {
+                testCountryLabelHtml = '<div class="country-label">AU</div>';
+                console.log(`🔧 テスト用国名ラベル強制表示: ${stockData.symbol} -> AU`);
+            }
+            
+            const rsiQuadrantHtml = (stockData.rsi !== null && stockData.rsi !== undefined) ? 
+                `<div class="rsi-quadrant">
+                    <div class="rsi-label">RSI</div>
+                    <div class="rsi-value ${getRSIColorClass(stockData.rsi)}">${Math.round(stockData.rsi)}</div>
+                </div>` : '';
+            
+            // wobble情報を取得（段差レベル）
+            const wobbleLevel = stockData.wobbleLevel !== undefined ? stockData.wobbleLevel : (stockData.crackLevel !== undefined ? stockData.crackLevel : 0);
+            
+            // デバッグ用：wobble_levelをコンソールに出力（確認用）
+            if (wobbleLevel > 0) {
+                console.log(`🔍 ${stockData.symbol}: wobble_level=${wobbleLevel}, totalScore=${stockData.crackTotalScore || 0}`);
+            }
+            
+            // 段差クラスは追加しない（視覚的な差を表示しないため）
+            
+            tile.innerHTML += `
+                <div class="sector-label">${sectorLabel}</div>
+                <div class="metal-tag">${metalTag}</div>
+                ${countryLabelHtml || testCountryLabelHtml}
+                ${gradeHtml}
+                ${rsiQuadrantHtml}
+                <div class="tile-content">
+                    <div class="ticker">${stockData.symbol}</div>
+                    <div class="price">${priceFormatted}</div>
+                    <div class="change">${changeStr}</div>
+                    <div class="market-cap">${marketCapFormatted}</div>
+                </div>
+            `;
+            
+            setTimeout(() => {
+                if (stockData.historicalPrices && stockData.historicalPrices.length > 1) {
+                    const useWhiteChart = tile.className.includes('gain-');
+                    drawMiniChart(canvas, stockData.historicalPrices, stockData.changePercent, useWhiteChart);
+                } else {
+                    drawPlaceholderChart(canvas, stockData.changePercent);
+                }
+            }, 100);
+            
+            return tile;
+        }
+        
+        function drawPlaceholderChart(canvas, changePercent) {
+            const ctx = canvas.getContext('2d');
+            const rect = canvas.parentElement.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+            
+            const padding = 10;
+            const startX = padding;
+            const endX = canvas.width - padding;
+            const midY = canvas.height / 2;
+            const amplitude = canvas.height / 4;
+            
+            let lineColor = changePercent > 0 ? 'rgba(0, 255, 0, 1)' : 'rgba(255, 87, 34, 1)';
+            
+            ctx.beginPath();
+            ctx.strokeStyle = lineColor;
+            ctx.lineWidth = 4;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            
+            if (changePercent > 0) {
+                ctx.moveTo(startX, midY + amplitude);
+                ctx.lineTo(canvas.width / 2, midY);
+                ctx.lineTo(endX, midY - amplitude);
+            } else {
+                ctx.moveTo(startX, midY - amplitude);
+                ctx.lineTo(canvas.width / 2, midY);
+                ctx.lineTo(endX, midY + amplitude);
+            }
+            ctx.stroke();
+        }
+        
+        function drawMiniChart(canvas, prices, changePercent, useWhiteChart = false) {
+            if (!canvas || !canvas.parentElement) return;
+            
+            const ctx = canvas.getContext('2d');
+            const rect = canvas.parentElement.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+            
+            if (prices.length < 2) return;
+            
+            const values = prices.map(p => p.close);
+            const minPrice = Math.min(...values);
+            const maxPrice = Math.max(...values);
+            const priceRange = maxPrice - minPrice || 1;
+            
+            const padding = 10;
+            const chartWidth = canvas.width - padding * 2;
+            const chartHeight = canvas.height - padding * 2;
+            const lineWidth = canvas.width < 150 ? 8 : 6;
+            
+            let lineColor, outlineColor;
+            
+            if (useWhiteChart) {
+                lineColor = changePercent > 10 ? 'rgba(255, 255, 255, 1)' : 
+                           changePercent > 5 ? 'rgba(0, 255, 255, 1)' : 
+                           'rgba(255, 255, 255, 0.95)';
+                outlineColor = 'rgba(0, 0, 0, 0.9)';
+            } else {
+                lineColor = changePercent > 10 ? 'rgba(0, 255, 0, 1)' : 
+                           changePercent > 0 ? 'rgba(76, 175, 80, 1)' : 
+                           changePercent > -10 ? 'rgba(255, 140, 0, 1)' : 
+                           'rgba(255, 60, 0, 1)';
+                outlineColor = 'rgba(255, 255, 255, 0.8)';
+            }
+            
+            ctx.beginPath();
+            ctx.strokeStyle = outlineColor;
+            ctx.lineWidth = lineWidth + 4;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            
+            prices.forEach((point, index) => {
+                const x = padding + (index / (prices.length - 1)) * chartWidth;
+                const y = padding + chartHeight - ((point.close - minPrice) / priceRange) * chartHeight;
+                index === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.strokeStyle = lineColor;
+            ctx.lineWidth = lineWidth;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            
+            prices.forEach((point, index) => {
+                const x = padding + (index / (prices.length - 1)) * chartWidth;
+                const y = padding + chartHeight - ((point.close - minPrice) / priceRange) * chartHeight;
+                index === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            
+            ctx.lineTo(padding + chartWidth, padding + chartHeight);
+            ctx.lineTo(padding, padding + chartHeight);
+            ctx.closePath();
+            ctx.fillStyle = lineColor.replace('1)', '0.35)');
+            ctx.fill();
+        }
+        
+        // セクション別の並べ替え状態を管理（'marketCap' = 時価総額順, 'changePercent' = 上昇率順, 'rsi' = RSI順, 'asc' = 昇順, 'desc' = 降順）
+        const sectionSortState = {
+            gold: { mode: 'marketCap', order: 'desc' },
+            silver: { mode: 'marketCap', order: 'desc' },
+            copper: { mode: 'marketCap', order: 'desc' },
+            fertilizer: { mode: 'marketCap', order: 'desc' },
+            platinum: { mode: 'marketCap', order: 'desc' },
+            lithium: { mode: 'marketCap', order: 'desc' },
+            uranium: { mode: 'marketCap', order: 'desc' },
+            nickel: { mode: 'marketCap', order: 'desc' },
+            ree: { mode: 'marketCap', order: 'desc' },
+            titanium: { mode: 'marketCap', order: 'desc' }
+        };
+        
+        function renderTilesInSection(containerId, sectionData, sectionName) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = '';
+            
+            // セクション名から並べ替え状態を取得（デフォルトは時価総額順）
+            const sortState = sectionSortState[sectionName] || { mode: 'marketCap', order: 'desc' };
+            
+            sectionData.sort((a, b) => {
+                if (sortState.mode === 'changePercent') {
+                    // 上昇率順で並べ替え
+                    const aChange = a.changePercent !== null && a.changePercent !== undefined ? a.changePercent : -999;
+                    const bChange = b.changePercent !== null && b.changePercent !== undefined ? b.changePercent : -999;
+                    return sortState.order === 'desc' ? bChange - aChange : aChange - bChange;
+                } else if (sortState.mode === 'rsi') {
+                    // RSI順で並べ替え
+                    const aRsi = a.rsi !== null && a.rsi !== undefined ? a.rsi : -1;
+                    const bRsi = b.rsi !== null && b.rsi !== undefined ? b.rsi : -1;
+                    return sortState.order === 'desc' ? bRsi - aRsi : aRsi - bRsi;
+                } else {
+                    // 時価総額順で並べ替え（デフォルト）
+                    const isJapaneseA = ['2036', '1541', '1542', '1673', '1674'].includes(a.symbol);
+                    const isJapaneseB = ['2036', '1541', '1542', '1673', '1674'].includes(b.symbol);
+                    let aMarketCap = a.marketCap || marketCapEstimates[a.symbol] || 1000;
+                    let bMarketCap = b.marketCap || marketCapEstimates[b.symbol] || 1000;
+                    if (isJapaneseA && a.currency === 'JPY') {
+                        aMarketCap = aMarketCap / 150; // ドル換算
+                    }
+                    if (isJapaneseB && b.currency === 'JPY') {
+                        bMarketCap = bMarketCap / 150; // ドル換算
+                    }
+                    return sortState.order === 'desc' ? bMarketCap - aMarketCap : aMarketCap - bMarketCap;
+                }
+            });
+            sectionData.forEach((stockData, index) => {
+                const tile = createDynamicTile(stockData);
+                setTimeout(() => {
+                    container.appendChild(tile);
+                    setTimeout(() => {
+                        const canvas = tile.querySelector('.chart-canvas');
+                        if (canvas && stockData.historicalPrices && stockData.historicalPrices.length > 1) {
+                            const tileClasses = tile.className;
+                            let chartOpacity = tileClasses.includes('neutral') ? 0.6 : 
+                                              tileClasses.includes('loss-') ? 0.55 : 0.5;
+                            let useWhiteChart = tileClasses.includes('gain-');
+                            if (tileClasses.includes('size-mini') || tileClasses.includes('size-micro')) {
+                                chartOpacity += 0.1;
+                            }
+                            canvas.style.opacity = chartOpacity.toString();
+                            drawMiniChart(canvas, stockData.historicalPrices, stockData.changePercent, useWhiteChart);
+                        } else if (canvas) {
+                            drawPlaceholderChart(canvas, stockData.changePercent);
+                        }
+                    }, 50);
+                }, index * 100);
+            });
+        }
+        
+        function updateAllTiles(stocksArray) {
+            const sectionData = {
+                gold: stocksArray.filter(s => metalSymbols.gold.includes(s.symbol)),
+                silver: stocksArray.filter(s => metalSymbols.silver.includes(s.symbol)),
+                copper: stocksArray.filter(s => metalSymbols.copper.includes(s.symbol)),
+                fertilizer: stocksArray.filter(s => metalSymbols.fertilizer.includes(s.symbol)),
+                platinum: stocksArray.filter(s => metalSymbols.platinum.includes(s.symbol)),
+                lithium: stocksArray.filter(s => metalSymbols.lithium.includes(s.symbol)),
+                uranium: stocksArray.filter(s => metalSymbols.uranium.includes(s.symbol)),
+                nickel: stocksArray.filter(s => metalSymbols.nickel.includes(s.symbol)),
+                ree: stocksArray.filter(s => metalSymbols.ree.includes(s.symbol)),
+                titanium: stocksArray.filter(s => metalSymbols.titanium.includes(s.symbol))
+            };
+            
+            renderTilesInSection('goldContainer', sectionData.gold, 'gold');
+            setTimeout(() => renderTilesInSection('silverContainer', sectionData.silver, 'silver'), 200);
+            setTimeout(() => renderTilesInSection('copperContainer', sectionData.copper, 'copper'), 400);
+            setTimeout(() => renderTilesInSection('fertilizerContainer', sectionData.fertilizer, 'fertilizer'), 600);
+            setTimeout(() => renderTilesInSection('platinumContainer', sectionData.platinum, 'platinum'), 800);
+            setTimeout(() => renderTilesInSection('lithiumContainer', sectionData.lithium, 'lithium'), 1000);
+            setTimeout(() => renderTilesInSection('uraniumContainer', sectionData.uranium, 'uranium'), 1200);
+            setTimeout(() => renderTilesInSection('nickelContainer', sectionData.nickel, 'nickel'), 1400);
+            setTimeout(() => renderTilesInSection('reeContainer', sectionData.ree, 'ree'), 1600);
+            setTimeout(() => renderTilesInSection('titaniumContainer', sectionData.titanium, 'titanium'), 1800);
+            setTimeout(() => { updateTileColors(); updateMarketCapStats(stocksArray); }, 2000);
+        }
+        
+        function updateMarketCapStats(stocksArray) {
+            const totalMarketCap = stocksArray.reduce((sum, s) => {
+                const isJapanese = ['2036', '1541', '1542', '1673', '1674'].includes(s.symbol);
+                let marketCap = s.marketCap || marketCapEstimates[s.symbol] || 1000;
+                if (isJapanese && s.currency === 'JPY') {
+                    marketCap = marketCap / 150; // ドル換算
+                }
+                return sum + marketCap;
+            }, 0);
+            document.getElementById('marketCapStats').textContent = `$${(totalMarketCap / 1000).toFixed(0)}B`;
+        }
+        
+        function updateTileColors() {
+            document.querySelectorAll('.dynamic-tile').forEach(tile => {
+                const changeElement = tile.querySelector('.change');
+                if (!changeElement) return;
+                const changeText = changeElement.textContent.trim();
+                if (!changeText || changeText === '待機中') { 
+                    tile.classList.remove('gain-extreme', 'gain-high', 'gain-medium', 'gain-low', 'loss-low', 'loss-medium', 'loss-high', 'loss-extreme', 'neutral');
+                    tile.classList.add('neutral'); 
+                    return; 
+                }
+                const changeValue = parseFloat(changeText.replace('%', '').replace('+', ''));
+                if (isNaN(changeValue)) { 
+                    tile.classList.remove('gain-extreme', 'gain-high', 'gain-medium', 'gain-low', 'loss-low', 'loss-medium', 'loss-high', 'loss-extreme', 'neutral');
+                    tile.classList.add('neutral'); 
+                    return; 
+                }
+                
+                const thresholds = {
+                    'daily': { extreme: 20, high: 4, medium: 2 },
+                    'week': { extreme: 30, high: 10, medium: 5 },
+                    'month': { extreme: 50, high: 20, medium: 10 },
+                    '3month': { extreme: 75, high: 30, medium: 15 },
+                    'year': { extreme: 100, high: 50, medium: 25 }
+                };
+                const t = thresholds[currentPeriod] || thresholds['daily'];
+                tile.classList.remove('gain-extreme', 'gain-high', 'gain-medium', 'gain-low', 'loss-low', 'loss-medium', 'loss-high', 'loss-extreme', 'neutral');
+                
+                if (changeValue > 0) {
+                    if (changeValue >= t.extreme) tile.classList.add('gain-extreme');
+                    else if (changeValue >= t.high) tile.classList.add('gain-high');
+                    else if (changeValue >= t.medium) tile.classList.add('gain-medium');
+                    else tile.classList.add('gain-low');
+                } else if (changeValue < 0) {
+                    const absValue = Math.abs(changeValue);
+                    if (absValue >= t.extreme) tile.classList.add('loss-extreme');
+                    else if (absValue >= t.high) tile.classList.add('loss-high');
+                    else if (absValue >= t.medium) tile.classList.add('loss-medium');
+                    else tile.classList.add('loss-low');
+                } else tile.classList.add('neutral');
+            });
+        }
+        
+        function updateLegend() {
+            const thresholds = {'realtime':{extreme:10,high:3,medium:1.5},'daily': {extreme:20,high:4,medium:2},'week':{extreme:30,high:10,medium:5},'month':{extreme:50,high:20,medium:10},'3month':{extreme:75,high:30,medium:15}};
+            const t = thresholds[currentPeriod] || thresholds['daily'];
+            document.getElementById('legend-gain-extreme').textContent = `+${t.extreme}%+`;
+            document.getElementById('legend-gain-high').textContent = `+${t.high}%+`;
+            document.getElementById('legend-gain-medium').textContent = `+${t.medium}~${t.high}%`;
+            document.getElementById('legend-gain-low').textContent = `0~+${t.medium}%`;
+            document.getElementById('legend-loss-low').textContent = `0~-${t.medium}%`;
+            document.getElementById('legend-loss-medium').textContent = `-${t.medium}~-${t.high}%`;
+            document.getElementById('legend-loss-high').textContent = `-${t.high}~-${t.extreme}%`;
+            document.getElementById('legend-loss-extreme').textContent = `-${t.extreme}%-`;
+        }
+        
+        async function changePeriod(period) {
+            if (currentPeriod === period || isUpdating) return;
+            currentPeriod = period;
+            document.querySelectorAll('.period-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-period="${period}"]`).classList.add('active');
+            document.getElementById('currentPeriod').textContent = {'daily':'日次','week':'週次','month':'月次','3month':'3ヶ月','year':'1年'}[period];
+            updateLegend();
+            
+            // join JSONを直接読み込んで表示
+            await loadJoinData(period);
+        }
+        
+        // 📖 join JSONを直接読み込んで表示（ユーザー用: サーバーAPIを使用しない）
+        async function loadJoinData(period) {
+            // グローバル変数に現在のデータを保存（並べ替えボタンで使用）
+            window.currentStocksData = null;
+            try {
+                console.log(`📖 join JSON読み込み開始: ${period}`);
+                // ファイル名のマッピング
+                const periodFileMap = {
+                    'daily': 'joined_daily.json',
+                    'week': 'joined_week.json',
+                    'month': 'joined_month.json',
+                    '3month': 'joined_3month.json',
+                    'year': 'joined_year.json'
+                };
+                
+                const fileName = periodFileMap[period];
+                if (!fileName) {
+                    throw new Error(`不明な期間: ${period}`);
+                }
+                
+                const filePath = `${DATA_PATH}/${fileName}`;
+                console.log(`📂 ファイルパス: ${filePath}`);
+                
+                const response = await fetch(filePath, {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        throw new Error(`joinファイルが見つかりません (${period})。ファイルが存在するか確認してください: ${filePath}`);
+                    }
+                    throw new Error(`ファイル読み込みエラー: ${response.status}`);
+                }
+                
+                const joinData = await response.json();
+                console.log(`✅ join JSON読み込み成功: ${period}`, joinData.meta);
+                
+                // joinデータをstocksData形式に変換
+                stocksData = Object.values(joinData.symbols).map(symbolData => ({
+                    symbol: symbolData.symbol,
+                    currentPrice: symbolData.price,
+                    price: symbolData.price,
+                    priceFormatted: symbolData.priceFormatted,
+                    previousPrice: symbolData.previousPrice,
+                    change: symbolData.change,
+                    changePercent: symbolData.changePercent,
+                    high: symbolData.high,
+                    low: symbolData.low,
+                    open: symbolData.open,
+                    marketCap: symbolData.marketCap,
+                    marketCapFormatted: symbolData.marketCapFormatted,
+                    dataPoints: symbolData.dataPoints,
+                    historicalPrices: symbolData.historicalPrices || [],
+                    metalTag: symbolData.metalTag,
+                    hasIbLabel: symbolData.hasIbLabel,
+                    rsi: symbolData.rsi,
+                    rsiPeriod: symbolData.rsiPeriod,
+                    sentiment: symbolData.sentiment,
+                    currency: symbolData.currency,
+                    eodhdSymbol: symbolData.eodhdSymbol,
+                    countryLabel: symbolData.countryLabel,
+                    // wobble情報を追加（段差レベル）
+                    wobbleLevel: symbolData.wobbleLevel !== undefined ? symbolData.wobbleLevel : (symbolData.crackLevel !== undefined ? symbolData.crackLevel : 0),
+                    crackScores: symbolData.crackScores || {},
+                    crackTotalScore: symbolData.crackTotalScore || 0,
+                    // 後方互換性のため、旧フィールドも残す
+                    crackLevel: symbolData.wobbleLevel !== undefined ? symbolData.wobbleLevel : (symbolData.crackLevel !== undefined ? symbolData.crackLevel : 0)
+                }));
+                
+                // グローバル変数に現在のデータを保存（並べ替えボタンで使用）
+                window.currentStocksData = stocksData;
+                
+                // タイルを更新
+                ['goldContainer', 'silverContainer', 'copperContainer', 'fertilizerContainer', 'platinumContainer', 'lithiumContainer', 'uraniumContainer', 'nickelContainer', 'reeContainer', 'titaniumContainer']
+                    .forEach(id => document.getElementById(id).innerHTML = '');
+                setTimeout(() => updateAllTiles(stocksData), 200);
+                
+                // 更新時刻を表示
+                if (joinData.meta && joinData.meta.updated_at) {
+                    const updatedDate = new Date(joinData.meta.updated_at);
+                    document.getElementById('lastUpdate').textContent = 
+                        updatedDate.getFullYear() + '-' + String(updatedDate.getMonth() + 1).padStart(2, '0') + '-' +
+                        String(updatedDate.getDate()).padStart(2, '0') + ' ' +
+                        String(updatedDate.getHours()).padStart(2, '0') + ':' + String(updatedDate.getMinutes()).padStart(2, '0');
+                }
+                
+                showNotification(`✅ ${period}データ読み込み完了 (${stocksData.length}銘柄)`, 'success');
+            } catch (error) {
+                console.error('❌ join JSON読み込みエラー:', error);
+                showNotification(`⚠️ データ読み込みエラー: ${error.message}`, 'error');
+            }
+        }
+        
+        function updateTimestamp() {
+            const now = new Date();
+            document.getElementById('lastUpdate').textContent = 
+                now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' +
+                String(now.getDate()).padStart(2, '0') + ' ' +
+                String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+        }
+        
+        // その他の国別銘柄リストを更新
+        function updateOtherCountriesList(stocksData) {
+            const container = document.getElementById('otherCountriesList');
+            if (!container) return;
+            
+            // 米国・カナダ・日本以外の銘柄を国別に分類
+            const countryGroups = {};
+            const countryNames = {
+                'AU': { name: 'オーストラリア', flag: '🇦🇺' },
+                'GB': { name: 'イギリス', flag: '🇬🇧' },
+                'CN': { name: '中国', flag: '🇨🇳' },
+                'DE': { name: 'ドイツ', flag: '🇩🇪' },
+                'HK': { name: '香港', flag: '🇭🇰' }
+            };
+            
+            stocksData.forEach(stock => {
+                const country = stock.countryLabel || stock.exchange;
+                if (country && country !== 'US' && country !== 'CA' && country !== 'JP') {
+                    if (!countryGroups[country]) {
+                        countryGroups[country] = [];
+                    }
+                    countryGroups[country].push(stock);
+                }
+            });
+            
+            // リストを生成
+            if (Object.keys(countryGroups).length === 0) {
+                container.innerHTML = '<div style="text-align: center; color: rgba(255,255,255,0.6); padding: 20px;">米国・カナダ・日本以外の銘柄はありません</div>';
+                return;
+            }
+            
+            let html = '';
+            Object.keys(countryGroups).sort().forEach(country => {
+                const stocks = countryGroups[country];
+                const countryInfo = countryNames[country] || { name: country, flag: '🌍' };
+                
+                html += `
+                    <div class="country-group">
+                        <div class="country-group-header">
+                            <span class="country-flag">${countryInfo.flag}</span>
+                            <span class="country-name">${countryInfo.name}</span>
+                            <span class="country-count">${stocks.length}銘柄</span>
+                        </div>
+                        <div class="country-symbols">
+                            ${stocks.map(stock => {
+                                const price = stock.currentPrice || stock.price || 'N/A';
+                                const change = stock.changePercent !== null && stock.changePercent !== undefined ? 
+                                    (stock.changePercent >= 0 ? '+' : '') + stock.changePercent.toFixed(2) + '%' : 'N/A';
+                                const companyName = companyNames[stock.symbol] || stock.symbol;
+                                return `
+                                    <div class="country-symbol-item" title="${companyName}">
+                                        <strong>${stock.symbol}</strong> - ${price} (${change})
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        function showNotification(message, type = 'success') {
+            const existing = document.querySelector('.notification');
+            if (existing) existing.remove();
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            setTimeout(() => notification.classList.add('show'), 100);
+            setTimeout(() => { notification.classList.remove('show'); setTimeout(() => notification.remove(), 300); }, 3000);
+        }
+        
+        // 市場開場時間の計算と表示（日本時間基準）
+        function updateMarketHours() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1;
+            const day = now.getDate();
+            
+            // 夏時間/冬時間の判定
+            const isDST = isDaylightSavingTime(now);
+            const timeInfo = isDST ? '夏時間 (DST)' : '冬時間 (標準時)';
+            
+            // 市場開場時間の設定（日本時間 JST = UTC+9）
+            const marketHours = {
+                us: isDST ? { start: 22, end: 5 } : { start: 23, end: 6 }, // ニューヨーク (夏: 9:30-16:00 EST → 22:30-5:00 JST, 冬: 9:30-16:00 EST → 23:30-6:00 JST)
+                ca: isDST ? { start: 22, end: 5 } : { start: 23, end: 6 }, // トロント (ニューヨークと同じ)
+                au: isDST ? { start: 7, end: 15 } : { start: 8, end: 16 },   // シドニー (夏: 10:00-16:00 AEDT → 8:00-14:00 JST, 冬: 10:00-16:00 AEST → 9:00-15:00 JST)
+                jp: { start: 9, end: 15 }  // 東京 (9:00-15:00 JST)
+            };
+            
+            // 情報表示を更新
+            document.getElementById('marketHoursInfo').textContent = 
+                `現在: ${year}年${month}月${day}日 - ${timeInfo} | 日本時間基準`;
+            
+            // 時間グリッドを生成
+            const hoursGrid = document.getElementById('hoursGrid');
+            hoursGrid.innerHTML = '';
+            for (let i = 0; i < 24; i++) {
+                const span = document.createElement('span');
+                span.textContent = i.toString();
+                hoursGrid.appendChild(span);
+            }
+            
+            // 各市場の開場時間バーを更新
+            updateMarketBar('usHours', marketHours.us);
+            updateMarketBar('caHours', marketHours.ca);
+            updateMarketBar('auHours', marketHours.au);
+            updateMarketBar('jpHours', marketHours.jp);
+        }
+        
+        // 夏時間の判定
+        function isDaylightSavingTime(date) {
+            const year = date.getFullYear();
+            
+            // 米国夏時間: 3月第2日曜日 2:00 AM - 11月第1日曜日 2:00 AM
+            const marchSecondSunday = getSecondSunday(year, 2); // 3月
+            const novemberFirstSunday = getFirstSunday(year, 10); // 11月
+            
+            return date >= marchSecondSunday && date < novemberFirstSunday;
+        }
+        
+        // 第N日曜日を取得
+        function getFirstSunday(year, month) {
+            const firstDay = new Date(year, month, 1);
+            const dayOfWeek = firstDay.getDay();
+            const daysToAdd = dayOfWeek === 0 ? 0 : 7 - dayOfWeek;
+            return new Date(year, month, 1 + daysToAdd);
+        }
+        
+        function getSecondSunday(year, month) {
+            const firstSunday = getFirstSunday(year, month);
+            return new Date(year, month, firstSunday.getDate() + 7);
+        }
+        
+        // 市場バーの更新
+        function updateMarketBar(elementId, hours) {
+            const element = document.getElementById(elementId);
+            const startPercent = (hours.start / 24) * 100;
+            const endPercent = (hours.end / 24) * 100;
+            
+            let gradient;
+            if (hours.end > hours.start) {
+                // 通常の時間範囲（同じ日）
+                gradient = `linear-gradient(90deg, 
+                    transparent 0%, 
+                    transparent ${startPercent}%, 
+                    #4CAF50 ${startPercent}%, 
+                    #4CAF50 ${endPercent}%, 
+                    transparent ${endPercent}%, 
+                    transparent 100%)`;
+            } else {
+                // 日をまたぐ時間範囲（シドニーなど）
+                gradient = `linear-gradient(90deg, 
+                    #4CAF50 0%, 
+                    #4CAF50 ${endPercent}%, 
+                    transparent ${endPercent}%, 
+                    transparent ${startPercent}%, 
+                    #4CAF50 ${startPercent}%, 
+                    #4CAF50 100%)`;
+            }
+            
+            element.style.background = gradient;
+        }
+        
+        // 銘柄詳細表示関数
+        function showDetails(ticker) {
+            const companyName = companyNames[ticker] || '企業名不明';
+            const stockData = stocksData.find(stock => stock.symbol === ticker);
+            
+            let detailsHtml = `
+                <div style="background: rgba(0,0,0,0.9); padding: 20px; border-radius: 10px; color: white; max-width: 400px;">
+                    <h3 style="margin: 0 0 15px 0; color: #4CAF50;">${ticker}</h3>
+                    <p style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold;">${companyName}</p>
+            `;
+            
+            if (stockData) {
+                detailsHtml += `
+                    <div style="margin: 10px 0;">
+                        <strong>現在価格:</strong> ${stockData.priceFormatted || 'N/A'}<br>
+                        <strong>変動率:</strong> ${stockData.changePercent ? stockData.changePercent.toFixed(2) + '%' : 'N/A'}<br>
+                        <strong>時価総額:</strong> ${stockData.marketCapFormatted || 'N/A'}<br>
+                        ${stockData.rsi !== null ? `<strong>RSI:</strong> ${stockData.rsi.toFixed(1)}<br>` : ''}
+                        ${stockData.countryLabel ? `<strong>市場:</strong> ${stockData.countryLabel}<br>` : ''}
+                        ${celebrityGrades[ticker] ? `<strong>評価:</strong> ${celebrityGrades[ticker]}<br>` : ''}
+                    </div>
+                `;
+            }
+            
+            detailsHtml += `
+                    <button onclick="this.parentElement.remove()" style="background: #4CAF50; color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; margin-top: 10px;">閉じる</button>
+                </div>
+            `;
+            
+            // 既存の詳細表示を削除
+            const existingDetails = document.querySelector('.stock-details-overlay');
+            if (existingDetails) {
+                existingDetails.remove();
+            }
+            
+            // 新しい詳細表示を作成
+            const overlay = document.createElement('div');
+            overlay.className = 'stock-details-overlay';
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            `;
+            overlay.innerHTML = detailsHtml;
+            
+            // オーバーレイクリックで閉じる
+            overlay.onclick = (e) => {
+                if (e.target === overlay) {
+                    overlay.remove();
+                }
+            };
+            
+            document.body.appendChild(overlay);
+        }
+        
+        // 並べ替えボタンのイベントハンドラー
+        function setupSortButtons() {
+            document.querySelectorAll('.sort-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const section = this.getAttribute('data-section');
+                    const sortType = this.getAttribute('data-sort-type'); // 'changePercent' または 'rsi'
+                    const sortState = sectionSortState[section];
+                    
+                    if (!sortState || !sortType) return;
+                    
+                    // 同じボタンをクリックした場合は昇順/降順を切り替え
+                    // 異なるボタンをクリックした場合はモードを切り替え（降順で開始）
+                    if (sortState.mode === sortType) {
+                        // 同じモードの場合は昇順/降順を切り替え
+                        sortState.order = sortState.order === 'desc' ? 'asc' : 'desc';
+                    } else {
+                        // 異なるモードの場合はモードを切り替え（降順で開始）
+                        sortState.mode = sortType;
+                        sortState.order = 'desc';
+                    }
+                    
+                    // すべてのボタンの表示を更新
+                    const sectionButtons = document.querySelectorAll(`.sort-btn[data-section="${section}"]`);
+                    sectionButtons.forEach(button => {
+                        const buttonSortType = button.getAttribute('data-sort-type');
+                        const icon = button.querySelector('.sort-icon');
+                        const text = button.querySelector('.sort-text');
+                        
+                        if (sortState.mode === buttonSortType) {
+                            // アクティブなボタン
+                            button.classList.add('active');
+                            if (buttonSortType === 'changePercent') {
+                                icon.textContent = sortState.order === 'desc' ? '📈' : '📉';
+                                text.textContent = sortState.order === 'desc' ? '％上昇率順↓' : '％上昇率順↑';
+                            } else if (buttonSortType === 'rsi') {
+                                icon.textContent = sortState.order === 'desc' ? '📊' : '📊';
+                                text.textContent = sortState.order === 'desc' ? 'RSI順↓' : 'RSI順↑';
+                            }
+                        } else {
+                            // 非アクティブなボタン
+                            button.classList.remove('active');
+                            if (buttonSortType === 'changePercent') {
+                                icon.textContent = '📈';
+                                text.textContent = '％上昇率順';
+                            } else if (buttonSortType === 'rsi') {
+                                icon.textContent = '📊';
+                                text.textContent = 'RSI順';
+                            }
+                        }
+                    });
+                    
+                    // 該当セクションを再描画
+                    const containerMap = {
+                        'gold': 'goldContainer',
+                        'silver': 'silverContainer',
+                        'copper': 'copperContainer',
+                        'fertilizer': 'fertilizerContainer',
+                        'platinum': 'platinumContainer',
+                        'lithium': 'lithiumContainer',
+                        'uranium': 'uraniumContainer',
+                        'nickel': 'nickelContainer',
+                        'ree': 'reeContainer',
+                        'titanium': 'titaniumContainer'
+                    };
+                    
+                    const containerId = containerMap[section];
+                    if (containerId && window.currentStocksData) {
+                        const sectionData = window.currentStocksData.filter(s => {
+                            const sectionSymbols = {
+                                'gold': metalSymbols.gold,
+                                'silver': metalSymbols.silver,
+                                'copper': metalSymbols.copper,
+                                'fertilizer': metalSymbols.fertilizer,
+                                'platinum': metalSymbols.platinum,
+                                'lithium': metalSymbols.lithium,
+                                'uranium': metalSymbols.uranium,
+                                'nickel': metalSymbols.nickel,
+                                'ree': metalSymbols.ree,
+                                'titanium': metalSymbols.titanium
+                            };
+                            return sectionSymbols[section] && sectionSymbols[section].includes(s.symbol);
+                        });
+                        renderTilesInSection(containerId, sectionData, section);
+                    }
+                });
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', async function() {
+            updateLegend();
+            updateTimestamp();
+            updateMarketHours();
+            
+            // 並べ替えボタンのイベントリスナーを設定
+            setupSortButtons();
+            
+            // 初期表示時にjoin JSONを直接読み込む（ユーザー用）
+            try {
+                await loadJoinData(currentPeriod);
+            } catch (error) {
+                console.log('⚠️ 初期読み込み失敗（joinファイルが存在しない可能性）:', error.message);
+                showNotification(`⚠️ データ読み込みエラー: ${error.message}`, 'error');
+            }
+            
+            showNotification('🚀 Metals Treemap 準備完了!', 'success');
+        });
+    </script>
+</body>
+</html>
