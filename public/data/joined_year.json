@@ -1,7 +1,7 @@
 {
   "meta": {
-    "period": "month",
-    "updated_at": "2026-01-04T04:02:13.367Z",
+    "period": "year",
+    "updated_at": "2026-01-04T04:11:06.957Z",
     "symbols_hash": "0458087f7a2729be",
     "total_symbols": 151,
     "successful": 151,
@@ -11,7 +11,7 @@
     "1541": {
       "symbol": "1541",
       "metalCategory": "platinum",
-      "period": "month",
+      "period": "year",
       "exchange": "JP",
       "price": 11100,
       "priceFormatted": "¥11100.00",
@@ -1243,13 +1243,13 @@
       ],
       "metalTag": "Pt",
       "hasIbLabel": false,
-      "rsi": 73.2,
-      "rsiPeriod": 10,
+      "rsi": 73.29,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-overbought",
-        "rsi": 73.2,
+        "rsi": 73.3,
         "changePercent": -4.39,
-        "x": 0.4640000000000001,
+        "x": 0.4658000000000001,
         "y": -0.2196382428940568,
         "color": "#ff8787",
         "label": "悲観的・買われすぎ",
@@ -1264,19 +1264,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
-      "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "crackTotalScore": 8,
+      "currentPeriodCrack": 0
     },
     "1542": {
       "symbol": "1542",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "JP",
       "price": 36550,
       "priceFormatted": "¥36550.00",
@@ -2508,13 +2508,13 @@
       ],
       "metalTag": "Ag",
       "hasIbLabel": false,
-      "rsi": 78.15,
-      "rsiPeriod": 10,
+      "rsi": 77.47,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-overbought",
-        "rsi": 78.2,
+        "rsi": 77.5,
         "changePercent": -3.56,
-        "x": 0.5630000000000002,
+        "x": 0.5494,
         "y": -0.17810026385224276,
         "color": "#ff8787",
         "label": "悲観的・買われすぎ",
@@ -2529,19 +2529,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
-      "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "crackTotalScore": 7,
+      "currentPeriodCrack": 0
     },
     "1673": {
       "symbol": "1673",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "JP",
       "price": 10835,
       "priceFormatted": "¥10835.00",
@@ -3773,13 +3773,13 @@
       ],
       "metalTag": "Ag",
       "hasIbLabel": false,
-      "rsi": 74.51,
-      "rsiPeriod": 10,
+      "rsi": 75.13,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-overbought",
-        "rsi": 74.5,
+        "rsi": 75.1,
         "changePercent": -2.48,
-        "x": 0.4902000000000001,
+        "x": 0.5025999999999999,
         "y": -0.12376237623762376,
         "color": "#ff8787",
         "label": "悲観的・買われすぎ",
@@ -3794,19 +3794,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
-      "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "crackTotalScore": 7,
+      "currentPeriodCrack": 0
     },
     "1674": {
       "symbol": "1674",
       "metalCategory": "platinum",
-      "period": "month",
+      "period": "year",
       "exchange": "JP",
       "price": 30860,
       "priceFormatted": "¥30860.00",
@@ -5038,13 +5038,13 @@
       ],
       "metalTag": "Pt",
       "hasIbLabel": false,
-      "rsi": 59.44,
-      "rsiPeriod": 10,
+      "rsi": 61.98,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 59.4,
+        "rsi": 62,
         "changePercent": -8.32,
-        "x": 0.18879999999999997,
+        "x": 0.23959999999999992,
         "y": -0.4159239453357101,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -5059,19 +5059,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
-      "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "crackTotalScore": 12,
+      "currentPeriodCrack": 0
     },
     "2036": {
       "symbol": "2036",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "JP",
       "price": 186100,
       "priceFormatted": "¥186100.00",
@@ -6303,13 +6303,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 55.97,
-      "rsiPeriod": 10,
+      "rsi": 58.66,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 56,
+        "rsi": 58.7,
         "changePercent": -4.49,
-        "x": 0.11939999999999998,
+        "x": 0.17319999999999994,
         "y": -0.22453169104439313,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -6324,19 +6324,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
-      "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "crackTotalScore": 10,
+      "currentPeriodCrack": 0
     },
     "NEM": {
       "symbol": "NEM",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 101.22,
       "priceFormatted": "$101.22",
@@ -7598,13 +7598,13 @@
       ],
       "metalTag": "Au+Ag+Cu+Mo",
       "hasIbLabel": false,
-      "rsi": 56.01,
-      "rsiPeriod": 10,
+      "rsi": 57.85,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 56,
+        "rsi": 57.9,
         "changePercent": 1.37,
-        "x": 0.12019999999999996,
+        "x": 0.15700000000000003,
         "y": 0.06860290435653503,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -7619,11 +7619,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -7631,7 +7631,7 @@
     "B": {
       "symbol": "B",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 44.08,
       "priceFormatted": "$44.08",
@@ -8893,13 +8893,13 @@
       ],
       "metalTag": "Au+Cu",
       "hasIbLabel": false,
-      "rsi": 56.05,
-      "rsiPeriod": 10,
+      "rsi": 59.34,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 56.1,
+        "rsi": 59.3,
         "changePercent": 1.22,
-        "x": 0.12099999999999994,
+        "x": 0.18680000000000008,
         "y": 0.060849598163031135,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -8914,19 +8914,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "AEM": {
       "symbol": "AEM",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 170.45,
       "priceFormatted": "$170.45",
@@ -10188,13 +10188,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 46.76,
-      "rsiPeriod": 10,
+      "rsi": 49.2,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 46.8,
+        "rsi": 49.2,
         "changePercent": 0.54,
-        "x": -0.06480000000000004,
+        "x": -0.015999999999999945,
         "y": 0.0271338406181793,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -10209,19 +10209,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "KGC": {
       "symbol": "KGC",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 28.3,
       "priceFormatted": "$28.30",
@@ -11483,13 +11483,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 51.73,
-      "rsiPeriod": 10,
+      "rsi": 54.21,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 51.7,
+        "rsi": 54.2,
         "changePercent": 0.5,
-        "x": 0.034599999999999936,
+        "x": 0.08420000000000001,
         "y": 0.024857954545454645,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -11504,19 +11504,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "IAG": {
       "symbol": "IAG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 16.22,
       "priceFormatted": "$16.22",
@@ -12778,13 +12778,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 49.85,
-      "rsiPeriod": 10,
+      "rsi": 54.1,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 49.9,
+        "rsi": 54.1,
         "changePercent": -1.64,
-        "x": -0.0029999999999999714,
+        "x": 0.08200000000000003,
         "y": -0.08186779866585799,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -12799,19 +12799,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "MUX": {
       "symbol": "MUX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 18.68,
       "priceFormatted": "$18.68",
@@ -14073,13 +14073,13 @@
       ],
       "metalTag": "Au+Ag+Cu",
       "hasIbLabel": false,
-      "rsi": 46.15,
-      "rsiPeriod": 10,
+      "rsi": 48.83,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 46.2,
+        "rsi": 48.8,
         "changePercent": 0.92,
-        "x": -0.07700000000000003,
+        "x": -0.023400000000000035,
         "y": 0.045921123716909276,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -14094,19 +14094,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SSRM": {
       "symbol": "SSRM",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 21.52,
       "priceFormatted": "$21.52",
@@ -15368,13 +15368,13 @@
       ],
       "metalTag": "Au+Ag+Cu",
       "hasIbLabel": false,
-      "rsi": 40.96,
-      "rsiPeriod": 10,
+      "rsi": 44.65,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 41,
+        "rsi": 44.7,
         "changePercent": -1.82,
-        "x": -0.1808,
+        "x": -0.10700000000000003,
         "y": -0.09124087591240923,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -15389,19 +15389,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "WPM": {
       "symbol": "WPM",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 117.87,
       "priceFormatted": "$117.87",
@@ -16663,13 +16663,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 54.24,
-      "rsiPeriod": 10,
+      "rsi": 56.55,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 54.2,
+        "rsi": 56.6,
         "changePercent": 0.3,
-        "x": 0.08480000000000004,
+        "x": 0.13099999999999995,
         "y": 0.014891082368958839,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -16684,19 +16684,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "GDX": {
       "symbol": "GDX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 85.73,
       "priceFormatted": "$85.73",
@@ -17958,13 +17958,13 @@
       ],
       "metalTag": "Au+Ag+Cu",
       "hasIbLabel": false,
-      "rsi": 51.4,
-      "rsiPeriod": 10,
+      "rsi": 54.64,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51.4,
+        "rsi": 54.6,
         "changePercent": -0.05,
-        "x": 0.027999999999999973,
+        "x": 0.09280000000000001,
         "y": -0.0023318176518591608,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -17979,19 +17979,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "GDXJ": {
       "symbol": "GDXJ",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 113.2,
       "priceFormatted": "$113.20",
@@ -19253,13 +19253,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 52.18,
-      "rsiPeriod": 10,
+      "rsi": 55.62,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 52.2,
+        "rsi": 55.6,
         "changePercent": -0.51,
-        "x": 0.04359999999999999,
+        "x": 0.11239999999999994,
         "y": -0.025487783441729576,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -19274,19 +19274,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "NUGT": {
       "symbol": "NUGT",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 183.9,
       "priceFormatted": "$183.90",
@@ -20548,13 +20548,13 @@
       ],
       "metalTag": "Au+Ag+Cu",
       "hasIbLabel": false,
-      "rsi": 49.85,
-      "rsiPeriod": 10,
+      "rsi": 53.17,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 49.9,
+        "rsi": 53.2,
         "changePercent": 0.03,
-        "x": -0.0029999999999999714,
+        "x": 0.06340000000000004,
         "y": 0.001359804188197209,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -20569,19 +20569,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ARMN": {
       "symbol": "ARMN",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 15.81,
       "priceFormatted": "$15.81",
@@ -21843,13 +21843,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 55.17,
-      "rsiPeriod": 10,
+      "rsi": 60.33,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 55.2,
+        "rsi": 60.3,
         "changePercent": -2.59,
-        "x": 0.10340000000000003,
+        "x": 0.20659999999999998,
         "y": -0.12939001848428833,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -21864,19 +21864,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 2,
+        "3month": 1
       },
       "crackTotalScore": 11,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "BTG": {
       "symbol": "BTG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 4.5,
       "priceFormatted": "$4.50",
@@ -23138,13 +23138,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 44.98,
-      "rsiPeriod": 10,
+      "rsi": 47.66,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 45,
+        "rsi": 47.7,
         "changePercent": -0.22,
-        "x": -0.10040000000000006,
+        "x": -0.04680000000000007,
         "y": -0.01108647450110841,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -23159,19 +23159,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "NFGC": {
       "symbol": "NFGC",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 3.03,
       "priceFormatted": "$3.03",
@@ -24433,13 +24433,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 56.02,
-      "rsiPeriod": 10,
+      "rsi": 57.33,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 56,
+        "rsi": 57.3,
         "changePercent": 2.02,
-        "x": 0.12040000000000006,
+        "x": 0.14659999999999995,
         "y": 0.10101010101010036,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -24454,19 +24454,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "PPTA": {
       "symbol": "PPTA",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 24.54,
       "priceFormatted": "$24.54",
@@ -25728,13 +25728,13 @@
       ],
       "metalTag": "Au+Ag+Sb+Zn",
       "hasIbLabel": false,
-      "rsi": 40.85,
-      "rsiPeriod": 10,
+      "rsi": 44.95,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 40.9,
+        "rsi": 45,
         "changePercent": 1.36,
-        "x": -0.18299999999999997,
+        "x": -0.10099999999999994,
         "y": 0.06815365551424996,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -25749,19 +25749,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "USAU": {
       "symbol": "USAU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 18.48,
       "priceFormatted": "$18.48",
@@ -27023,13 +27023,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 46.92,
-      "rsiPeriod": 10,
+      "rsi": 50.52,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 46.9,
+        "rsi": 50.5,
         "changePercent": -4.79,
-        "x": -0.06159999999999997,
+        "x": 0.010400000000000062,
         "y": -0.23956723338485308,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -27044,19 +27044,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AUMB": {
       "symbol": "AUMB",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.89,
       "priceFormatted": "C$0.89",
@@ -28323,13 +28323,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 41.61,
-      "rsiPeriod": 10,
+      "rsi": 45.08,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 41.6,
+        "rsi": 45.1,
         "changePercent": 1.14,
-        "x": -0.1678,
+        "x": -0.09840000000000003,
         "y": 0.056818181818181865,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -28344,19 +28344,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "LG": {
       "symbol": "LG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.225,
       "priceFormatted": "C$0.23",
@@ -29623,13 +29623,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 58.78,
-      "rsiPeriod": 10,
+      "rsi": 59.67,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 58.8,
+        "rsi": 59.7,
         "changePercent": -4.26,
-        "x": 0.17560000000000003,
+        "x": 0.19340000000000004,
         "y": -0.2127659574468081,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -29644,19 +29644,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "OMI": {
       "symbol": "OMI",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.45,
       "priceFormatted": "C$0.45",
@@ -30923,13 +30923,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 57.47,
-      "rsiPeriod": 10,
+      "rsi": 56.45,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 57.5,
+        "rsi": 56.5,
         "changePercent": 1.12,
-        "x": 0.14939999999999998,
+        "x": 0.12900000000000006,
         "y": 0.05617977528089892,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -30944,19 +30944,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "TSK": {
       "symbol": "TSK",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.45,
       "priceFormatted": "C$1.45",
@@ -32223,13 +32223,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 53.11,
-      "rsiPeriod": 10,
+      "rsi": 52.57,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 53.1,
+        "rsi": 52.6,
         "changePercent": 0.69,
-        "x": 0.06219999999999999,
+        "x": 0.05140000000000001,
         "y": 0.03472222222222225,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -32244,19 +32244,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AUMBF": {
       "symbol": "AUMBF",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 0.6498,
       "priceFormatted": "$0.650",
@@ -33518,13 +33518,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 42.5,
-      "rsiPeriod": 10,
+      "rsi": 45.54,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 42.5,
+        "rsi": 45.5,
         "changePercent": 0.59,
-        "x": -0.15,
+        "x": -0.08920000000000002,
         "y": 0.029411764705882554,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -33539,19 +33539,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "LGCXF": {
       "symbol": "LGCXF",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 0.1655,
       "priceFormatted": "$0.166",
@@ -34828,13 +34828,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": false,
-      "rsi": 58.18,
-      "rsiPeriod": 10,
+      "rsi": 59.88,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 58.2,
+        "rsi": 59.9,
         "changePercent": -3.78,
-        "x": 0.1636,
+        "x": 0.19760000000000005,
         "y": -0.1889534883720924,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -34849,11 +34849,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 2,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 2
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 14,
       "currentPeriodCrack": 2
@@ -34861,7 +34861,7 @@
     "TSKFF": {
       "symbol": "TSKFF",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 1.06,
       "priceFormatted": "$1.06",
@@ -36103,13 +36103,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 51.05,
-      "rsiPeriod": 10,
+      "rsi": 51.56,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 51.1,
+        "rsi": 51.6,
         "changePercent": 0.47,
-        "x": 0.020999999999999942,
+        "x": 0.031200000000000047,
         "y": 0.023696682464455523,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -36124,19 +36124,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ASE": {
       "symbol": "ASE",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.67,
       "priceFormatted": "C$1.67",
@@ -37403,13 +37403,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 32.37,
-      "rsiPeriod": 10,
+      "rsi": 34.47,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 32.4,
+        "rsi": 34.5,
         "changePercent": 1.21,
-        "x": -0.3526,
+        "x": -0.31060000000000004,
         "y": 0.06060606060606066,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -37424,19 +37424,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "CERT": {
       "symbol": "CERT",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.66,
       "priceFormatted": "$1.66",
@@ -38703,13 +38703,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 54.21,
-      "rsiPeriod": 10,
+      "rsi": 55.53,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 54.2,
+        "rsi": 55.5,
         "changePercent": 0.61,
-        "x": 0.08420000000000001,
+        "x": 0.11060000000000002,
         "y": 0.03030303030303033,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -38724,19 +38724,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "DNRSF": {
       "symbol": "DNRSF",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 0.58,
       "priceFormatted": "$0.580",
@@ -40008,13 +40008,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 65.49,
-      "rsiPeriod": 10,
+      "rsi": 65.42,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 65.5,
+        "rsi": 65.4,
         "changePercent": 10.48,
-        "x": 0.3097999999999999,
+        "x": 0.3084,
         "y": 0.5238095238095232,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -40029,11 +40029,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 0,
+        "3month": 1
       },
       "crackTotalScore": 5,
       "currentPeriodCrack": 0
@@ -40041,7 +40041,7 @@
     "HSTR": {
       "symbol": "HSTR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 2.51,
       "priceFormatted": "$2.51",
@@ -41308,13 +41308,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 42.22,
-      "rsiPeriod": 10,
+      "rsi": 48.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 42.2,
+        "rsi": 48,
         "changePercent": -0.79,
-        "x": -0.15560000000000002,
+        "x": -0.03939999999999998,
         "y": -0.03952569169960478,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -41329,19 +41329,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ITR": {
       "symbol": "ITR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 5.27,
       "priceFormatted": "$5.27",
@@ -42608,13 +42608,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 43.27,
-      "rsiPeriod": 10,
+      "rsi": 48.64,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 43.3,
+        "rsi": 48.6,
         "changePercent": -4.53,
-        "x": -0.13459999999999994,
+        "x": -0.027199999999999988,
         "y": -0.2264492753623189,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -42629,19 +42629,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "JAG": {
       "symbol": "JAG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 7.06,
       "priceFormatted": "$7.06",
@@ -43908,13 +43908,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 45.46,
-      "rsiPeriod": 10,
+      "rsi": 50.21,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 45.5,
+        "rsi": 50.2,
         "changePercent": -2.35,
-        "x": -0.09079999999999998,
+        "x": 0.004200000000000017,
         "y": -0.1175656984785621,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -43929,19 +43929,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "MSA": {
       "symbol": "MSA",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 5.48,
       "priceFormatted": "$5.48",
@@ -45208,13 +45208,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 42.9,
-      "rsiPeriod": 10,
+      "rsi": 46.98,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 42.9,
+        "rsi": 47,
         "changePercent": -2.49,
-        "x": -0.14200000000000002,
+        "x": -0.060400000000000065,
         "y": -0.12455516014234846,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -45229,11 +45229,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -45241,7 +45241,7 @@
     "NEXG": {
       "symbol": "NEXG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.77,
       "priceFormatted": "$1.77",
@@ -46508,13 +46508,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 65.06,
-      "rsiPeriod": 10,
+      "rsi": 64.73,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 65.1,
+        "rsi": 64.7,
         "changePercent": 0.57,
-        "x": 0.3012,
+        "x": 0.2946000000000001,
         "y": 0.028409090909090932,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -46529,11 +46529,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -46541,7 +46541,7 @@
     "ORE": {
       "symbol": "ORE",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.76,
       "priceFormatted": "$1.76",
@@ -47808,13 +47808,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 54.1,
-      "rsiPeriod": 10,
+      "rsi": 57.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 54.1,
+        "rsi": 57,
         "changePercent": -0.56,
-        "x": 0.08200000000000003,
+        "x": 0.14060000000000003,
         "y": -0.028248587570621497,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -47829,19 +47829,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "PZG": {
       "symbol": "PZG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 1.19,
       "priceFormatted": "$1.19",
@@ -49103,13 +49103,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 50.33,
-      "rsiPeriod": 10,
+      "rsi": 51.1,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 50.3,
+        "rsi": 51.1,
         "changePercent": -5.56,
-        "x": 0.006599999999999966,
+        "x": 0.02200000000000003,
         "y": -0.277777777777778,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -49124,19 +49124,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "RVG": {
       "symbol": "RVG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.72,
       "priceFormatted": "$0.720",
@@ -50403,13 +50403,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 51.27,
-      "rsiPeriod": 10,
+      "rsi": 51.98,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 51.3,
+        "rsi": 52,
         "changePercent": 4.35,
-        "x": 0.02540000000000006,
+        "x": 0.03959999999999994,
         "y": 0.2173913043478263,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -50424,19 +50424,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "RUA": {
       "symbol": "RUA",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.21,
       "priceFormatted": "$1.21",
@@ -51703,13 +51703,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 45.97,
-      "rsiPeriod": 10,
+      "rsi": 50.14,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 46,
+        "rsi": 50.1,
         "changePercent": -3.2,
-        "x": -0.08060000000000002,
+        "x": 0.0028000000000000112,
         "y": -0.16000000000000014,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -51724,19 +51724,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "STLR": {
       "symbol": "STLR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.61,
       "priceFormatted": "$1.61",
@@ -53003,13 +53003,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 46.82,
-      "rsiPeriod": 10,
+      "rsi": 50.56,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 46.8,
+        "rsi": 50.6,
         "changePercent": -1.23,
-        "x": -0.06359999999999999,
+        "x": 0.011200000000000045,
         "y": -0.061349693251533124,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -53024,19 +53024,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SGO": {
       "symbol": "SGO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.295,
       "priceFormatted": "$0.295",
@@ -54303,13 +54303,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 72.07,
-      "rsiPeriod": 10,
+      "rsi": 71.01,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-overbought",
-        "rsi": 72.1,
+        "rsi": 71,
         "changePercent": -4.84,
-        "x": 0.44139999999999985,
+        "x": 0.42020000000000013,
         "y": -0.24193548387096792,
         "color": "#ff8787",
         "label": "悲観的・買われすぎ",
@@ -54324,19 +54324,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "WRLG": {
       "symbol": "WRLG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.03,
       "priceFormatted": "$1.03",
@@ -55603,13 +55603,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": false,
-      "rsi": 55.07,
-      "rsiPeriod": 10,
+      "rsi": 56.65,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 55.1,
+        "rsi": 56.7,
         "changePercent": -0.96,
-        "x": 0.1014,
+        "x": 0.13299999999999998,
         "y": -0.048076923076923114,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -55624,19 +55624,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "ALK": {
       "symbol": "ALK",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.38,
       "priceFormatted": "A$1.38",
@@ -55778,13 +55778,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 78.49,
-      "rsiPeriod": 10,
+      "rsi": 75.87,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 78.5,
+        "rsi": 75.9,
         "changePercent": 109.09,
-        "x": 0.5697999999999999,
+        "x": 0.5174000000000001,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -55799,11 +55799,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 1,
       "currentPeriodCrack": 0
@@ -55811,7 +55811,7 @@
     "AAUC": {
       "symbol": "AAUC",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 31.66,
       "priceFormatted": "C$31.66",
@@ -57078,13 +57078,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 54.42,
-      "rsiPeriod": 10,
+      "rsi": 57.65,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 54.4,
+        "rsi": 57.7,
         "changePercent": 0.67,
-        "x": 0.08840000000000003,
+        "x": 0.15299999999999997,
         "y": 0.0333863275039747,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -57099,19 +57099,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AMX": {
       "symbol": "AMX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 3.99,
       "priceFormatted": "C$3.99",
@@ -58378,13 +58378,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 57.55,
-      "rsiPeriod": 10,
+      "rsi": 61.13,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 57.6,
+        "rsi": 61.1,
         "changePercent": -0.25,
-        "x": 0.15099999999999994,
+        "x": 0.22260000000000005,
         "y": -0.012499999999999734,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -58399,19 +58399,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ARIS": {
       "symbol": "ARIS",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 21.66,
       "priceFormatted": "C$21.66",
@@ -59678,13 +59678,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 56.49,
-      "rsiPeriod": 10,
+      "rsi": 61.37,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 56.5,
+        "rsi": 61.4,
         "changePercent": -2.7,
-        "x": 0.12980000000000003,
+        "x": 0.22739999999999994,
         "y": -0.13477088948787092,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -59699,19 +59699,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 2,
+        "3month": 1
       },
       "crackTotalScore": 11,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ORA": {
       "symbol": "ORA",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 113.73,
       "priceFormatted": "$113.73",
@@ -60973,13 +60973,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 56.78,
-      "rsiPeriod": 10,
+      "rsi": 55.93,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 56.8,
+        "rsi": 55.9,
         "changePercent": 2.95,
-        "x": 0.13560000000000003,
+        "x": 0.1186,
         "y": 0.14755137141305355,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -60994,19 +60994,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "AUC": {
       "symbol": "AUC",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.125,
       "priceFormatted": "A$1.13",
@@ -61148,13 +61148,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 72.18,
-      "rsiPeriod": 10,
+      "rsi": 71.39,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 72.2,
+        "rsi": 71.4,
         "changePercent": 275,
-        "x": 0.44360000000000016,
+        "x": 0.4278,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -61169,11 +61169,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 3,
       "currentPeriodCrack": 0
@@ -61181,7 +61181,7 @@
     "BGD": {
       "symbol": "BGD",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.31,
       "priceFormatted": "A$1.31",
@@ -61323,13 +61323,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 83.47,
-      "rsiPeriod": 10,
+      "rsi": 82.34,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 83.5,
+        "rsi": 82.3,
         "changePercent": 385.19,
-        "x": 0.6694,
+        "x": 0.6468,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -61344,11 +61344,11 @@
       "crackLevel": 0,
       "crackDisplay": "テカテカ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 0,
       "currentPeriodCrack": 0
@@ -61356,7 +61356,7 @@
     "BGL": {
       "symbol": "BGL",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.7,
       "priceFormatted": "A$1.70",
@@ -61498,13 +61498,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 64.47,
-      "rsiPeriod": 10,
+      "rsi": 57.98,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 64.5,
+        "rsi": 58,
         "changePercent": 2.72,
-        "x": 0.2894,
+        "x": 0.15959999999999994,
         "y": 0.13595166163141972,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -61519,11 +61519,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 3,
       "currentPeriodCrack": 0
@@ -61531,7 +61531,7 @@
     "BC8": {
       "symbol": "BC8",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.27,
       "priceFormatted": "A$1.27",
@@ -61673,13 +61673,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 68.08,
-      "rsiPeriod": 10,
+      "rsi": 69.38,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 68.1,
+        "rsi": 69.4,
         "changePercent": 440.43,
-        "x": 0.3616,
+        "x": 0.3875999999999999,
         "y": 1,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -61694,11 +61694,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 7,
       "currentPeriodCrack": 0
@@ -61706,7 +61706,7 @@
     "BOGO": {
       "symbol": "BOGO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.7,
       "priceFormatted": "C$1.70",
@@ -62973,13 +62973,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 49.78,
-      "rsiPeriod": 10,
+      "rsi": 51.51,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 49.8,
+        "rsi": 51.5,
         "changePercent": 0,
-        "x": -0.004399999999999977,
+        "x": 0.03019999999999996,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -62994,19 +62994,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "BTR": {
       "symbol": "BTR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 0.505,
       "priceFormatted": "A$0.505",
@@ -63148,13 +63148,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 55.56,
-      "rsiPeriod": 10,
+      "rsi": 56.62,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 55.6,
+        "rsi": 56.6,
         "changePercent": 26.25,
-        "x": 0.11120000000000005,
+        "x": 0.13239999999999996,
         "y": 1,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -63169,11 +63169,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -63181,7 +63181,7 @@
     "CBR": {
       "symbol": "CBR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.69,
       "priceFormatted": "C$0.69",
@@ -64448,13 +64448,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 44.84,
-      "rsiPeriod": 10,
+      "rsi": 49.2,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 44.8,
+        "rsi": 49.2,
         "changePercent": 0,
-        "x": -0.10319999999999993,
+        "x": -0.015999999999999945,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -64469,19 +64469,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "CEL": {
       "symbol": "CEL",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 0.16,
       "priceFormatted": "A$0.160",
@@ -64623,18 +64623,18 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 70.51,
-      "rsiPeriod": 10,
+      "rsi": 66.94,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "optimistic-overbought",
-        "rsi": 70.5,
+        "quadrant": "optimistic-neutral",
+        "rsi": 66.9,
         "changePercent": 113.33,
-        "x": 0.4102000000000001,
+        "x": 0.33879999999999993,
         "y": 1,
-        "color": "#ff6b6b",
-        "label": "楽観的・買われすぎ",
-        "description": "強気の過熱（注意）",
-        "isOverbought": true,
+        "color": "#94d82d",
+        "label": "楽観的・適正",
+        "description": "上昇トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": true
       },
@@ -64644,11 +64644,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 7,
       "currentPeriodCrack": 0
@@ -64656,7 +64656,7 @@
     "CKG": {
       "symbol": "CKG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 4.24,
       "priceFormatted": "C$4.24",
@@ -65923,13 +65923,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 69.41,
-      "rsiPeriod": 10,
+      "rsi": 68.41,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 69.4,
+        "rsi": 68.4,
         "changePercent": 2.17,
-        "x": 0.38819999999999993,
+        "x": 0.3681999999999999,
         "y": 0.10843373493975886,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -65944,11 +65944,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 0,
+        "3month": 1
       },
       "crackTotalScore": 7,
       "currentPeriodCrack": 0
@@ -65956,7 +65956,7 @@
     "FVL": {
       "symbol": "FVL",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.52,
       "priceFormatted": "C$1.52",
@@ -67223,13 +67223,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 51.75,
-      "rsiPeriod": 10,
+      "rsi": 54.01,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51.8,
+        "rsi": 54,
         "changePercent": -5.59,
-        "x": 0.035,
+        "x": 0.08019999999999997,
         "y": -0.2795031055900623,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -67244,19 +67244,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "GMIN": {
       "symbol": "GMIN",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 38.17,
       "priceFormatted": "C$38.17",
@@ -68523,13 +68523,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 46.65,
-      "rsiPeriod": 10,
+      "rsi": 52.35,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 46.7,
+        "rsi": 52.4,
         "changePercent": -8,
-        "x": -0.06700000000000003,
+        "x": 0.04700000000000003,
         "y": -0.4000964087731984,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -68544,19 +68544,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "GAU": {
       "symbol": "GAU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 3.52,
       "priceFormatted": "C$3.52",
@@ -69823,13 +69823,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 53.88,
-      "rsiPeriod": 10,
+      "rsi": 53.86,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
         "rsi": 53.9,
         "changePercent": 0.86,
-        "x": 0.07760000000000006,
+        "x": 0.07719999999999999,
         "y": 0.042979942693409455,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -69844,19 +69844,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "GGO": {
       "symbol": "GGO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.05,
       "priceFormatted": "C$1.05",
@@ -71123,18 +71123,18 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 71.34,
-      "rsiPeriod": 10,
+      "rsi": 69.61,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "pessimistic-overbought",
-        "rsi": 71.3,
+        "quadrant": "pessimistic-neutral",
+        "rsi": 69.6,
         "changePercent": -0.94,
-        "x": 0.42680000000000007,
+        "x": 0.3922,
         "y": -0.047169811320754755,
-        "color": "#ff8787",
-        "label": "悲観的・買われすぎ",
-        "description": "戻り売り候補",
-        "isOverbought": true,
+        "color": "#e599f7",
+        "label": "悲観的・適正",
+        "description": "下降トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": false
       },
@@ -71144,19 +71144,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "GGR": {
       "symbol": "GGR",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 3.03,
       "priceFormatted": "$3.03",
@@ -72418,13 +72418,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 33.66,
-      "rsiPeriod": 10,
+      "rsi": 34.11,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 33.7,
+        "rsi": 34.1,
         "changePercent": 10.58,
-        "x": -0.3268000000000001,
+        "x": -0.3178,
         "y": 0.5291970802919701,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -72439,19 +72439,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "THM": {
       "symbol": "THM",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 1.89,
       "priceFormatted": "$1.89",
@@ -73713,13 +73713,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 48.24,
-      "rsiPeriod": 10,
+      "rsi": 49.89,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 48.2,
+        "rsi": 49.9,
         "changePercent": 1.61,
-        "x": -0.03519999999999996,
+        "x": -0.0021999999999999884,
         "y": 0.08064516129032205,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -73734,19 +73734,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "LUCA": {
       "symbol": "LUCA",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.41,
       "priceFormatted": "C$1.41",
@@ -75013,13 +75013,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 50.13,
-      "rsiPeriod": 10,
+      "rsi": 51.65,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 50.1,
+        "rsi": 51.7,
         "changePercent": -5.37,
-        "x": 0.002600000000000051,
+        "x": 0.032999999999999974,
         "y": -0.2684563758389264,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -75034,19 +75034,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "MKO": {
       "symbol": "MKO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 7.96,
       "priceFormatted": "C$7.96",
@@ -76313,13 +76313,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 49.27,
-      "rsiPeriod": 10,
+      "rsi": 51.52,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 49.3,
+        "rsi": 51.5,
         "changePercent": -0.13,
-        "x": -0.014599999999999938,
+        "x": 0.030400000000000062,
         "y": -0.006273525721455324,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -76334,11 +76334,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -76346,7 +76346,7 @@
     "MAE": {
       "symbol": "MAE",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 2.24,
       "priceFormatted": "C$2.24",
@@ -76473,13 +76473,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 82.77,
-      "rsiPeriod": 10,
+      "rsi": 82.73,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 82.8,
+        "rsi": 82.7,
         "changePercent": 419.72,
-        "x": 0.6553999999999999,
+        "x": 0.6546000000000001,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -76494,11 +76494,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -76506,7 +76506,7 @@
     "MFG": {
       "symbol": "MFG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 5.28,
       "priceFormatted": "C$5.28",
@@ -77773,18 +77773,18 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 72.33,
-      "rsiPeriod": 10,
+      "rsi": 69,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "optimistic-overbought",
-        "rsi": 72.3,
+        "quadrant": "optimistic-neutral",
+        "rsi": 69,
         "changePercent": 6.45,
-        "x": 0.44659999999999994,
+        "x": 0.38,
         "y": 0.3225806451612906,
-        "color": "#ff6b6b",
-        "label": "楽観的・買われすぎ",
-        "description": "強気の過熱（注意）",
-        "isOverbought": true,
+        "color": "#94d82d",
+        "label": "楽観的・適正",
+        "description": "上昇トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": true
       },
@@ -77794,19 +77794,19 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 4,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "MAU": {
       "symbol": "MAU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 9.87,
       "priceFormatted": "C$9.87",
@@ -79073,18 +79073,18 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 70.31,
-      "rsiPeriod": 10,
+      "rsi": 69.74,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "pessimistic-overbought",
-        "rsi": 70.3,
+        "quadrant": "pessimistic-neutral",
+        "rsi": 69.7,
         "changePercent": -0.1,
-        "x": 0.40620000000000006,
+        "x": 0.3947999999999999,
         "y": -0.0050607287449400615,
-        "color": "#ff8787",
-        "label": "悲観的・買われすぎ",
-        "description": "戻り売り候補",
-        "isOverbought": true,
+        "color": "#e599f7",
+        "label": "悲観的・適正",
+        "description": "下降トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": false
       },
@@ -79094,19 +79094,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "NFG": {
       "symbol": "NFG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 82.06,
       "priceFormatted": "$82.06",
@@ -80368,13 +80368,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 57.9,
-      "rsiPeriod": 10,
+      "rsi": 55.32,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 57.9,
+        "rsi": 55.3,
         "changePercent": 2.5,
-        "x": 0.15799999999999997,
+        "x": 0.10640000000000001,
         "y": 0.12490632025980515,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -80389,19 +80389,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "NCX": {
       "symbol": "NCX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 2.61,
       "priceFormatted": "C$2.61",
@@ -81668,13 +81668,13 @@
       ],
       "metalTag": "Au+Cu",
       "hasIbLabel": true,
-      "rsi": 67.92,
-      "rsiPeriod": 10,
+      "rsi": 68.44,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 67.9,
+        "rsi": 68.4,
         "changePercent": -0.38,
-        "x": 0.35840000000000005,
+        "x": 0.36879999999999996,
         "y": -0.019083969465649296,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -81689,11 +81689,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 0,
+        "3month": 1
       },
       "crackTotalScore": 5,
       "currentPeriodCrack": 0
@@ -81701,7 +81701,7 @@
     "PGLD": {
       "symbol": "PGLD",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.64,
       "priceFormatted": "C$0.64",
@@ -82968,13 +82968,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 63.21,
-      "rsiPeriod": 10,
+      "rsi": 64.98,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 63.2,
+        "rsi": 65,
         "changePercent": -4.48,
-        "x": 0.2642,
+        "x": 0.2996000000000001,
         "y": -0.22388059701492558,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -82989,11 +82989,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -83001,7 +83001,7 @@
     "PRU": {
       "symbol": "PRU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 5.05,
       "priceFormatted": "C$5.05",
@@ -84268,13 +84268,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 52.69,
-      "rsiPeriod": 10,
+      "rsi": 54.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 52.7,
+        "rsi": 54,
         "changePercent": 0.6,
-        "x": 0.05379999999999995,
+        "x": 0.08060000000000002,
         "y": 0.029880478087649653,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -84289,11 +84289,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -84301,7 +84301,7 @@
     "RIO": {
       "symbol": "RIO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 3.37,
       "priceFormatted": "C$3.37",
@@ -85568,13 +85568,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 82.86,
-      "rsiPeriod": 10,
+      "rsi": 79.96,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-overbought",
-        "rsi": 82.9,
+        "rsi": 80,
         "changePercent": -0.88,
-        "x": 0.6572,
+        "x": 0.5991999999999998,
         "y": -0.04411764705882325,
         "color": "#ff8787",
         "label": "悲観的・買われすぎ",
@@ -85589,19 +85589,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "STN": {
       "symbol": "STN",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 0.49,
       "priceFormatted": "A$0.490",
@@ -85743,13 +85743,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 62.08,
-      "rsiPeriod": 10,
+      "rsi": 62.76,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 62.1,
+        "rsi": 62.8,
         "changePercent": 188.24,
-        "x": 0.24159999999999995,
+        "x": 0.2552,
         "y": 1,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -85764,11 +85764,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -85776,7 +85776,7 @@
     "SCOT": {
       "symbol": "SCOT",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.59,
       "priceFormatted": "C$1.59",
@@ -87043,13 +87043,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 41.27,
-      "rsiPeriod": 10,
+      "rsi": 43.91,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 41.3,
+        "rsi": 43.9,
         "changePercent": -1.85,
-        "x": -0.17459999999999995,
+        "x": -0.12180000000000007,
         "y": -0.09259259259259267,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -87064,19 +87064,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SICO": {
       "symbol": "SICO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 10,
       "priceFormatted": "C$10.00",
@@ -87333,13 +87333,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 66.28,
-      "rsiPeriod": 10,
+      "rsi": 67.45,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 66.3,
+        "rsi": 67.5,
         "changePercent": 5.26,
-        "x": 0.3256,
+        "x": 0.34900000000000003,
         "y": 0.2631578947368421,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -87354,11 +87354,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -87366,7 +87366,7 @@
     "STGO": {
       "symbol": "STGO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.91,
       "priceFormatted": "C$1.91",
@@ -88633,13 +88633,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 49.55,
-      "rsiPeriod": 10,
+      "rsi": 50.06,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 49.6,
+        "rsi": 50.1,
         "changePercent": 1.06,
-        "x": -0.009000000000000057,
+        "x": 0.0012000000000000454,
         "y": 0.05291005291005296,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -88654,19 +88654,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "TSO": {
       "symbol": "TSO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.27,
       "priceFormatted": "A$1.27",
@@ -88808,13 +88808,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 78,
-      "rsiPeriod": 10,
+      "rsi": 74.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 78,
+        "rsi": 74,
         "changePercent": 191.95,
-        "x": 0.56,
+        "x": 0.4806,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -88829,11 +88829,11 @@
       "crackLevel": 0,
       "crackDisplay": "テカテカ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 0,
       "currentPeriodCrack": 0
@@ -88841,7 +88841,7 @@
     "TAU": {
       "symbol": "TAU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 2.2,
       "priceFormatted": "C$2.20",
@@ -90108,13 +90108,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 50.74,
-      "rsiPeriod": 10,
+      "rsi": 54.24,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 50.7,
+        "rsi": 54.2,
         "changePercent": 0.46,
-        "x": 0.01480000000000004,
+        "x": 0.08480000000000004,
         "y": 0.022831050228311032,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -90129,11 +90129,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -90141,7 +90141,7 @@
     "THX": {
       "symbol": "THX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.27,
       "priceFormatted": "C$1.27",
@@ -91408,13 +91408,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 47.36,
-      "rsiPeriod": 10,
+      "rsi": 50.14,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 47.4,
+        "rsi": 50.1,
         "changePercent": 0,
-        "x": -0.052800000000000014,
+        "x": 0.0028000000000000112,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -91429,19 +91429,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "TXG": {
       "symbol": "TXG",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 64.49,
       "priceFormatted": "C$64.49",
@@ -92708,13 +92708,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 46.63,
-      "rsiPeriod": 10,
+      "rsi": 49.66,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 46.6,
+        "rsi": 49.7,
         "changePercent": -1.6,
-        "x": -0.06739999999999995,
+        "x": -0.006800000000000068,
         "y": -0.08010375343301887,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -92729,19 +92729,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "VAU": {
       "symbol": "VAU",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 5.48,
       "priceFormatted": "A$5.48",
@@ -92883,13 +92883,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 80.4,
-      "rsiPeriod": 10,
+      "rsi": 76.06,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 80.4,
+        "rsi": 76.1,
         "changePercent": 171.96,
-        "x": 0.6080000000000001,
+        "x": 0.5212,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -92904,11 +92904,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 1,
       "currentPeriodCrack": 0
@@ -92916,7 +92916,7 @@
     "WGX": {
       "symbol": "WGX",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 6.45,
       "priceFormatted": "A$6.45",
@@ -93058,13 +93058,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": false,
-      "rsi": 84.7,
-      "rsiPeriod": 10,
+      "rsi": 80.65,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 84.7,
+        "rsi": 80.7,
         "changePercent": 202.82,
-        "x": 0.6940000000000001,
+        "x": 0.6130000000000001,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -93079,11 +93079,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 3,
       "currentPeriodCrack": 0
@@ -93091,7 +93091,7 @@
     "WGO": {
       "symbol": "WGO",
       "metalCategory": "gold",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.22,
       "priceFormatted": "C$1.22",
@@ -94353,13 +94353,13 @@
       ],
       "metalTag": "Au",
       "hasIbLabel": true,
-      "rsi": 54.98,
-      "rsiPeriod": 10,
+      "rsi": 57,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 55,
+        "rsi": 57,
         "changePercent": 0,
-        "x": 0.09959999999999994,
+        "x": 0.14,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -94374,19 +94374,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AAG": {
       "symbol": "AAG",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.07,
       "priceFormatted": "C$1.07",
@@ -95653,13 +95653,13 @@
       ],
       "metalTag": "Ag",
       "hasIbLabel": true,
-      "rsi": 61.4,
-      "rsiPeriod": 10,
+      "rsi": 61.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 61.4,
+        "rsi": 61,
         "changePercent": 0,
-        "x": 0.22799999999999998,
+        "x": 0.22060000000000002,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -95674,19 +95674,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "USA": {
       "symbol": "USA",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 7,
       "priceFormatted": "C$7.00",
@@ -96953,13 +96953,13 @@
       ],
       "metalTag": "Ag+Au+Pb+Zn",
       "hasIbLabel": true,
-      "rsi": 44.62,
-      "rsiPeriod": 10,
+      "rsi": 49.94,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 44.6,
+        "rsi": 49.9,
         "changePercent": -0.57,
-        "x": -0.10760000000000006,
+        "x": -0.0012000000000000454,
         "y": -0.028409090909090932,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -96974,19 +96974,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "APM": {
       "symbol": "APM",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 9.7,
       "priceFormatted": "C$9.70",
@@ -98253,13 +98253,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 52.3,
-      "rsiPeriod": 10,
+      "rsi": 56.04,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 52.3,
+        "rsi": 56,
         "changePercent": -0.61,
-        "x": 0.045999999999999944,
+        "x": 0.12079999999999998,
         "y": -0.030737704918033043,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -98274,19 +98274,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ASL": {
       "symbol": "ASL",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 2.38,
       "priceFormatted": "A$2.38",
@@ -98398,13 +98398,13 @@
       ],
       "metalTag": "N/A",
       "hasIbLabel": true,
-      "rsi": 68.84,
-      "rsiPeriod": 10,
+      "rsi": 66.76,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 68.8,
+        "rsi": 66.8,
         "changePercent": 205.13,
-        "x": 0.3768000000000001,
+        "x": 0.3352000000000001,
         "y": 1,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -98419,11 +98419,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 3,
       "currentPeriodCrack": 0
@@ -98431,7 +98431,7 @@
     "ASM": {
       "symbol": "ASM",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 8.11,
       "priceFormatted": "C$8.11",
@@ -99698,13 +99698,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 42.61,
-      "rsiPeriod": 10,
+      "rsi": 48.53,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 42.6,
+        "rsi": 48.5,
         "changePercent": -5.04,
-        "x": -0.14780000000000001,
+        "x": -0.029399999999999978,
         "y": -0.2517564402810303,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -99719,19 +99719,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AYA": {
       "symbol": "AYA",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 19.43,
       "priceFormatted": "C$19.43",
@@ -100998,13 +100998,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 51.96,
-      "rsiPeriod": 10,
+      "rsi": 54.58,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 52,
+        "rsi": 54.6,
         "changePercent": -1.07,
-        "x": 0.03920000000000002,
+        "x": 0.09159999999999996,
         "y": -0.0534623217922609,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -101019,11 +101019,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -101031,7 +101031,7 @@
     "BNKR": {
       "symbol": "BNKR",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.225,
       "priceFormatted": "C$0.23",
@@ -102298,13 +102298,13 @@
       ],
       "metalTag": "Ag+Pb+Zn",
       "hasIbLabel": true,
-      "rsi": 42.68,
-      "rsiPeriod": 10,
+      "rsi": 46.61,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 42.7,
+        "rsi": 46.6,
         "changePercent": -5.26,
-        "x": -0.1464,
+        "x": -0.06780000000000001,
         "y": -0.26315789473684176,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -102319,19 +102319,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "DSV": {
       "symbol": "DSV",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 8.42,
       "priceFormatted": "C$8.42",
@@ -103598,13 +103598,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 52.64,
-      "rsiPeriod": 10,
+      "rsi": 56.51,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 52.6,
+        "rsi": 56.5,
         "changePercent": 0.48,
-        "x": 0.052800000000000014,
+        "x": 0.13019999999999995,
         "y": 0.02386634844868684,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -103619,19 +103619,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "EXK": {
       "symbol": "EXK",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 9.02,
       "priceFormatted": "$9.02",
@@ -104893,13 +104893,13 @@
       ],
       "metalTag": "Ag+Au+Pb+Zn+Cu",
       "hasIbLabel": false,
-      "rsi": 44.33,
-      "rsiPeriod": 10,
+      "rsi": 48.41,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 44.3,
+        "rsi": 48.4,
         "changePercent": -4.04,
-        "x": -0.11340000000000003,
+        "x": -0.03180000000000007,
         "y": -0.2021276595744685,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -104914,19 +104914,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AG": {
       "symbol": "AG",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 16.06,
       "priceFormatted": "$16.06",
@@ -106188,13 +106188,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": false,
-      "rsi": 48.41,
-      "rsiPeriod": 10,
+      "rsi": 52.92,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 48.4,
+        "rsi": 52.9,
         "changePercent": -3.6,
-        "x": -0.03180000000000007,
+        "x": 0.058400000000000035,
         "y": -0.18007202881152504,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -106209,19 +106209,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "GRSL": {
       "symbol": "GRSL",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.41,
       "priceFormatted": "$0.410",
@@ -107488,13 +107488,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 59.78,
-      "rsiPeriod": 10,
+      "rsi": 60.32,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 59.8,
+        "rsi": 60.3,
         "changePercent": 2.5,
-        "x": 0.19560000000000002,
+        "x": 0.2064,
         "y": 0.12499999999999942,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -107509,19 +107509,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "GGD": {
       "symbol": "GGD",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 2.9,
       "priceFormatted": "C$2.90",
@@ -108788,13 +108788,13 @@
       ],
       "metalTag": "Au+Ag",
       "hasIbLabel": true,
-      "rsi": 53.88,
-      "rsiPeriod": 10,
+      "rsi": 55.02,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 53.9,
+        "rsi": 55,
         "changePercent": -0.34,
-        "x": 0.07760000000000006,
+        "x": 0.10040000000000006,
         "y": -0.017182130584192837,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -108809,11 +108809,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 0,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 2,
       "currentPeriodCrack": 0
@@ -108821,7 +108821,7 @@
     "GSVR": {
       "symbol": "GSVR",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.69,
       "priceFormatted": "$0.690",
@@ -110088,13 +110088,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 69.56,
-      "rsiPeriod": 10,
+      "rsi": 69.64,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
         "rsi": 69.6,
         "changePercent": 0,
-        "x": 0.39120000000000005,
+        "x": 0.39280000000000004,
         "y": 0,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -110109,19 +110109,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "MMA": {
       "symbol": "MMA",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 0.43,
       "priceFormatted": "A$0.430",
@@ -110263,13 +110263,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 65.91,
-      "rsiPeriod": 10,
+      "rsi": 63.92,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 65.9,
+        "rsi": 63.9,
         "changePercent": 62.26,
-        "x": 0.3181999999999999,
+        "x": 0.27840000000000004,
         "y": 1,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -110284,11 +110284,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 1,
       "currentPeriodCrack": 0
@@ -110296,7 +110296,7 @@
     "PAAS": {
       "symbol": "PAAS",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 51.04,
       "priceFormatted": "$51.04",
@@ -111558,13 +111558,13 @@
       ],
       "metalTag": "Ag+Au+Pb+Zn",
       "hasIbLabel": false,
-      "rsi": 54.65,
-      "rsiPeriod": 10,
+      "rsi": 59.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 54.7,
+        "rsi": 59,
         "changePercent": -1.49,
-        "x": 0.09299999999999997,
+        "x": 0.1806,
         "y": -0.07430997876857778,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -111579,19 +111579,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SCZ": {
       "symbol": "SCZ",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 13.05,
       "priceFormatted": "C$13.05",
@@ -112858,13 +112858,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 55.9,
-      "rsiPeriod": 10,
+      "rsi": 57.69,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 55.9,
+        "rsi": 57.7,
         "changePercent": -1.36,
-        "x": 0.11799999999999997,
+        "x": 0.15379999999999996,
         "y": -0.06802721088435364,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -112879,19 +112879,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "AGMR": {
       "symbol": "AGMR",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 4.05,
       "priceFormatted": "$4.05",
@@ -114158,13 +114158,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 69.37,
-      "rsiPeriod": 10,
+      "rsi": 66.9,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 69.4,
+        "rsi": 66.9,
         "changePercent": 0.25,
-        "x": 0.3874000000000001,
+        "x": 0.33800000000000013,
         "y": 0.012376237623762113,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -114179,19 +114179,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 5,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SVRS": {
       "symbol": "SVRS",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.55,
       "priceFormatted": "$0.550",
@@ -115458,13 +115458,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 66.14,
-      "rsiPeriod": 10,
+      "rsi": 67.59,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 66.1,
+        "rsi": 67.6,
         "changePercent": -3.51,
-        "x": 0.32280000000000003,
+        "x": 0.35180000000000006,
         "y": -0.17543859649122726,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -115479,19 +115479,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SLVR": {
       "symbol": "SLVR",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 0.92,
       "priceFormatted": "C$0.92",
@@ -116758,13 +116758,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 60.44,
-      "rsiPeriod": 10,
+      "rsi": 59.77,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 60.4,
+        "rsi": 59.8,
         "changePercent": 1.1,
-        "x": 0.20879999999999996,
+        "x": 0.19540000000000007,
         "y": 0.05494505494505499,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -116779,11 +116779,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -116791,7 +116791,7 @@
     "SILV": {
       "symbol": "SILV",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 11.45,
       "priceFormatted": "$11.45",
@@ -118058,13 +118058,13 @@
       ],
       "metalTag": "Ag+Pb+Zn",
       "hasIbLabel": false,
-      "rsi": 50.98,
-      "rsiPeriod": 10,
+      "rsi": 54.24,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51,
+        "rsi": 54.2,
         "changePercent": -0.26,
-        "x": 0.019599999999999937,
+        "x": 0.08480000000000004,
         "y": -0.013066202090592829,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -118079,19 +118079,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SKE": {
       "symbol": "SKE",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 32.52,
       "priceFormatted": "C$32.52",
@@ -119358,13 +119358,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 55.06,
-      "rsiPeriod": 10,
+      "rsi": 58.56,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 55.1,
+        "rsi": 58.6,
         "changePercent": -0.25,
-        "x": 0.10120000000000004,
+        "x": 0.17120000000000005,
         "y": -0.012269938650306487,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -119379,19 +119379,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SS1": {
       "symbol": "SS1",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "AU",
       "price": 1.895,
       "priceFormatted": "A$1.90",
@@ -119513,13 +119513,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": true,
-      "rsi": 75.89,
-      "rsiPeriod": 10,
+      "rsi": 72.55,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 75.9,
+        "rsi": 72.6,
         "changePercent": 279,
-        "x": 0.5178,
+        "x": 0.45099999999999996,
         "y": 1,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -119534,11 +119534,11 @@
       "crackLevel": 1,
       "crackDisplay": "小ヒビ",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 0,
-        "3month": 0,
-        "year": 0
+        "month": 0,
+        "3month": 0
       },
       "crackTotalScore": 1,
       "currentPeriodCrack": 0
@@ -119546,7 +119546,7 @@
     "VZLA": {
       "symbol": "VZLA",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 5.52,
       "priceFormatted": "$5.52",
@@ -120808,13 +120808,13 @@
       ],
       "metalTag": "Ag+Au+Cu",
       "hasIbLabel": false,
-      "rsi": 55.51,
-      "rsiPeriod": 10,
+      "rsi": 57.39,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 55.5,
+        "rsi": 57.4,
         "changePercent": 0.91,
-        "x": 0.11019999999999996,
+        "x": 0.14780000000000001,
         "y": 0.04570383912248612,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -120829,19 +120829,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "HL": {
       "symbol": "HL",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 18.87,
       "priceFormatted": "$18.87",
@@ -122103,13 +122103,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": false,
-      "rsi": 51.63,
-      "rsiPeriod": 10,
+      "rsi": 55.64,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51.6,
+        "rsi": 55.6,
         "changePercent": -1.67,
-        "x": 0.03260000000000005,
+        "x": 0.11280000000000001,
         "y": -0.0833767587285045,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -122124,19 +122124,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "CDE": {
       "symbol": "CDE",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 17.55,
       "priceFormatted": "$17.55",
@@ -123398,13 +123398,13 @@
       ],
       "metalTag": "Ag+Au+Pb+Zn",
       "hasIbLabel": false,
-      "rsi": 49.33,
-      "rsiPeriod": 10,
+      "rsi": 51.68,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 49.3,
+        "rsi": 51.7,
         "changePercent": -1.57,
-        "x": -0.013400000000000033,
+        "x": 0.03359999999999999,
         "y": -0.0785193494111042,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -123419,19 +123419,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "IVR": {
       "symbol": "IVR",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 8.48,
       "priceFormatted": "$8.48",
@@ -124693,13 +124693,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": false,
-      "rsi": 72.51,
-      "rsiPeriod": 10,
+      "rsi": 70.91,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 72.5,
+        "rsi": 70.9,
         "changePercent": 0.83,
-        "x": 0.4502000000000001,
+        "x": 0.4181999999999999,
         "y": 0.041617122473246296,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -124714,19 +124714,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 0
       },
       "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SVM": {
       "symbol": "SVM",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 11.45,
       "priceFormatted": "$11.45",
@@ -125993,13 +125993,13 @@
       ],
       "metalTag": "Ag+Pb+Zn",
       "hasIbLabel": false,
-      "rsi": 50.98,
-      "rsiPeriod": 10,
+      "rsi": 54.24,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51,
+        "rsi": 54.2,
         "changePercent": -0.26,
-        "x": 0.019599999999999937,
+        "x": 0.08480000000000004,
         "y": -0.013066202090592829,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -126014,19 +126014,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SLV": {
       "symbol": "SLV",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 65.75,
       "priceFormatted": "$65.75",
@@ -127288,13 +127288,13 @@
       ],
       "metalTag": "Ag",
       "hasIbLabel": false,
-      "rsi": 60.54,
-      "rsiPeriod": 10,
+      "rsi": 62.72,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 60.5,
+        "rsi": 62.7,
         "changePercent": 2.06,
-        "x": 0.2108,
+        "x": 0.25439999999999996,
         "y": 0.10322881092828302,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -127309,19 +127309,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SIL": {
       "symbol": "SIL",
       "metalCategory": "silver",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 83.01,
       "priceFormatted": "$83.01",
@@ -128583,13 +128583,13 @@
       ],
       "metalTag": "Ag+Au",
       "hasIbLabel": false,
-      "rsi": 53.1,
-      "rsiPeriod": 10,
+      "rsi": 56.61,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 53.1,
+        "rsi": 56.6,
         "changePercent": -0.61,
-        "x": 0.06200000000000003,
+        "x": 0.13219999999999998,
         "y": -0.030531609195401755,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -128604,19 +128604,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "FCX": {
       "symbol": "FCX",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 51.93,
       "priceFormatted": "$51.93",
@@ -129878,13 +129878,13 @@
       ],
       "metalTag": "Cu+Au+Mo",
       "hasIbLabel": false,
-      "rsi": 70.45,
-      "rsiPeriod": 10,
+      "rsi": 70.37,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 70.5,
+        "rsi": 70.4,
         "changePercent": 2.24,
-        "x": 0.40900000000000003,
+        "x": 0.4074000000000001,
         "y": 0.11222681630242179,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -129899,19 +129899,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 0
       },
       "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SCCO": {
       "symbol": "SCCO",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 148.69,
       "priceFormatted": "$148.69",
@@ -131173,13 +131173,13 @@
       ],
       "metalTag": "Cu+Mo+Ag",
       "hasIbLabel": false,
-      "rsi": 62.45,
-      "rsiPeriod": 10,
+      "rsi": 61.84,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 62.5,
+        "rsi": 61.8,
         "changePercent": 3.64,
-        "x": 0.24900000000000005,
+        "x": 0.23680000000000007,
         "y": 0.1819195650658674,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -131194,11 +131194,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -131206,7 +131206,7 @@
     "TECK": {
       "symbol": "TECK",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 48.03,
       "priceFormatted": "$48.03",
@@ -132468,18 +132468,18 @@
       ],
       "metalTag": "Cu+Zn+Au",
       "hasIbLabel": false,
-      "rsi": 70.91,
-      "rsiPeriod": 10,
+      "rsi": 67.21,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "optimistic-overbought",
-        "rsi": 70.9,
+        "quadrant": "optimistic-neutral",
+        "rsi": 67.2,
         "changePercent": 0.29,
-        "x": 0.4181999999999999,
+        "x": 0.3441999999999999,
         "y": 0.014616830235957463,
-        "color": "#ff6b6b",
-        "label": "楽観的・買われすぎ",
-        "description": "強気の過熱（注意）",
-        "isOverbought": true,
+        "color": "#94d82d",
+        "label": "楽観的・適正",
+        "description": "上昇トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": true
       },
@@ -132489,19 +132489,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "BHP": {
       "symbol": "BHP",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 61.76,
       "priceFormatted": "$61.76",
@@ -133763,13 +133763,13 @@
       ],
       "metalTag": "Cu+Fe+Ni",
       "hasIbLabel": false,
-      "rsi": 64.45,
-      "rsiPeriod": 10,
+      "rsi": 63.71,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 64.5,
+        "rsi": 63.7,
         "changePercent": 2.3,
-        "x": 0.28900000000000003,
+        "x": 0.2742,
         "y": 0.11512340566506547,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -133784,11 +133784,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 0,
+        "3month": 1
       },
       "crackTotalScore": 5,
       "currentPeriodCrack": 0
@@ -133796,7 +133796,7 @@
     "RIO_CU": {
       "symbol": "RIO_CU",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 81.43,
       "priceFormatted": "$81.43",
@@ -135058,13 +135058,13 @@
       ],
       "metalTag": "Cu+Fe+Au",
       "hasIbLabel": false,
-      "rsi": 70.89,
-      "rsiPeriod": 10,
+      "rsi": 70.94,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
         "rsi": 70.9,
         "changePercent": 1.75,
-        "x": 0.4178,
+        "x": 0.41879999999999995,
         "y": 0.08746719980007531,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -135079,19 +135079,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "ERO": {
       "symbol": "ERO",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 29.05,
       "priceFormatted": "$29.05",
@@ -136353,13 +136353,13 @@
       ],
       "metalTag": "Cu+Au",
       "hasIbLabel": false,
-      "rsi": 75.38,
-      "rsiPeriod": 10,
+      "rsi": 73.03,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 75.4,
+        "rsi": 73,
         "changePercent": 2.69,
-        "x": 0.5075999999999999,
+        "x": 0.4606,
         "y": 0.13432308236125867,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -136374,19 +136374,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "COPX": {
       "symbol": "COPX",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 73.06,
       "priceFormatted": "$73.06",
@@ -137648,13 +137648,13 @@
       ],
       "metalTag": "Cu",
       "hasIbLabel": false,
-      "rsi": 68.02,
-      "rsiPeriod": 10,
+      "rsi": 67.74,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 68,
+        "rsi": 67.7,
         "changePercent": 1.77,
-        "x": 0.36039999999999994,
+        "x": 0.3547999999999999,
         "y": 0.08845243070065441,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -137669,19 +137669,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "ICOP": {
       "symbol": "ICOP",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 44.94,
       "priceFormatted": "$44.94",
@@ -138943,13 +138943,13 @@
       ],
       "metalTag": "Cu",
       "hasIbLabel": false,
-      "rsi": 65.29,
-      "rsiPeriod": 10,
+      "rsi": 65.75,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 65.3,
+        "rsi": 65.8,
         "changePercent": 1.42,
-        "x": 0.3058000000000001,
+        "x": 0.315,
         "y": 0.07109004739336441,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -138964,19 +138964,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "PPP": {
       "symbol": "PPP",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 1.21,
       "priceFormatted": "C$1.21",
@@ -140243,13 +140243,13 @@
       ],
       "metalTag": "Cu",
       "hasIbLabel": true,
-      "rsi": 51.28,
-      "rsiPeriod": 10,
+      "rsi": 53.36,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 51.3,
+        "rsi": 53.4,
         "changePercent": -1.63,
-        "x": 0.025600000000000022,
+        "x": 0.06719999999999998,
         "y": -0.08130081300813016,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -140264,19 +140264,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "BMM": {
       "symbol": "BMM",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "CA",
       "price": 7,
       "priceFormatted": "C$7.00",
@@ -141543,13 +141543,13 @@
       ],
       "metalTag": "Cu",
       "hasIbLabel": true,
-      "rsi": 77.38,
-      "rsiPeriod": 10,
+      "rsi": 73.42,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-overbought",
-        "rsi": 77.4,
+        "rsi": 73.4,
         "changePercent": 3.24,
-        "x": 0.5475999999999999,
+        "x": 0.46840000000000004,
         "y": 0.16224188790560454,
         "color": "#ff6b6b",
         "label": "楽観的・買われすぎ",
@@ -141564,19 +141564,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "TMQ": {
       "symbol": "TMQ",
       "metalCategory": "copper",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 4.59,
       "priceFormatted": "$4.59",
@@ -142838,13 +142838,13 @@
       ],
       "metalTag": "Cu+Ni",
       "hasIbLabel": false,
-      "rsi": 52.48,
-      "rsiPeriod": 10,
+      "rsi": 52.13,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 52.5,
+        "rsi": 52.1,
         "changePercent": 6.5,
-        "x": 0.049599999999999936,
+        "x": 0.042600000000000054,
         "y": 0.32482598607888663,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -142859,19 +142859,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "NTR": {
       "symbol": "NTR",
       "metalCategory": "fertilizer",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 63.16,
       "priceFormatted": "$63.16",
@@ -144133,13 +144133,13 @@
       ],
       "metalTag": "K+N+P",
       "hasIbLabel": false,
-      "rsi": 64.25,
-      "rsiPeriod": 10,
+      "rsi": 62.63,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 64.3,
+        "rsi": 62.6,
         "changePercent": 2.33,
-        "x": 0.285,
+        "x": 0.25260000000000005,
         "y": 0.11665586519766669,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -144154,19 +144154,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 0,
-        "year": 0
+        "month": 1,
+        "3month": 0
       },
       "crackTotalScore": 6,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "MOS": {
       "symbol": "MOS",
       "metalCategory": "fertilizer",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 25.02,
       "priceFormatted": "$25.02",
@@ -145428,13 +145428,13 @@
       ],
       "metalTag": "P+K",
       "hasIbLabel": false,
-      "rsi": 59.21,
-      "rsiPeriod": 10,
+      "rsi": 53.97,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 59.2,
+        "rsi": 54,
         "changePercent": 3.86,
-        "x": 0.18420000000000003,
+        "x": 0.07939999999999997,
         "y": 0.19302615193026146,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -145449,19 +145449,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "IPI": {
       "symbol": "IPI",
       "metalCategory": "fertilizer",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 28.265,
       "priceFormatted": "$28.27",
@@ -146723,13 +146723,13 @@
       ],
       "metalTag": "K+Mg",
       "hasIbLabel": false,
-      "rsi": 62.84,
-      "rsiPeriod": 10,
+      "rsi": 60.41,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 62.8,
+        "rsi": 60.4,
         "changePercent": 1.93,
-        "x": 0.2568000000000001,
+        "x": 0.20819999999999994,
         "y": 0.09646592138478186,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -146744,11 +146744,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -146756,7 +146756,7 @@
     "SBSW": {
       "symbol": "SBSW",
       "metalCategory": "platinum",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 14.46,
       "priceFormatted": "$14.46",
@@ -148018,13 +148018,13 @@
       ],
       "metalTag": "Pt+Pd+Rh+Au",
       "hasIbLabel": false,
-      "rsi": 56.19,
-      "rsiPeriod": 10,
+      "rsi": 58.36,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 56.2,
+        "rsi": 58.4,
         "changePercent": 1.47,
-        "x": 0.12379999999999995,
+        "x": 0.1672,
         "y": 0.0736842105263161,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -148039,19 +148039,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "PLG": {
       "symbol": "PLG",
       "metalCategory": "platinum",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 2.33,
       "priceFormatted": "$2.33",
@@ -149313,13 +149313,13 @@
       ],
       "metalTag": "Pt+Pd",
       "hasIbLabel": false,
-      "rsi": 39.63,
-      "rsiPeriod": 10,
+      "rsi": 44.1,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 39.6,
+        "rsi": 44.1,
         "changePercent": -1.27,
-        "x": -0.20739999999999995,
+        "x": -0.11799999999999997,
         "y": -0.06355932203389789,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -149334,19 +149334,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "ALB": {
       "symbol": "ALB",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 143.93,
       "priceFormatted": "$143.93",
@@ -150608,13 +150608,13 @@
       ],
       "metalTag": "Li+Br",
       "hasIbLabel": false,
-      "rsi": 62.13,
-      "rsiPeriod": 10,
+      "rsi": 63.92,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 62.1,
+        "rsi": 63.9,
         "changePercent": 1.76,
-        "x": 0.24260000000000004,
+        "x": 0.27840000000000004,
         "y": 0.0880231900452492,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -150629,19 +150629,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 9,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "LAC": {
       "symbol": "LAC",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 4.77,
       "priceFormatted": "$4.77",
@@ -151903,13 +151903,13 @@
       ],
       "metalTag": "Li",
       "hasIbLabel": false,
-      "rsi": 49.13,
-      "rsiPeriod": 10,
+      "rsi": 47.33,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 49.1,
+        "rsi": 47.3,
         "changePercent": 9.4,
-        "x": -0.01739999999999995,
+        "x": -0.05340000000000003,
         "y": 0.47018348623853123,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -151924,19 +151924,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SQM": {
       "symbol": "SQM",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 69.73,
       "priceFormatted": "$69.73",
@@ -153198,13 +153198,13 @@
       ],
       "metalTag": "Li+K",
       "hasIbLabel": false,
-      "rsi": 64.35,
-      "rsiPeriod": 10,
+      "rsi": 65.73,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 64.4,
+        "rsi": 65.7,
         "changePercent": 1.35,
-        "x": 0.28699999999999987,
+        "x": 0.3146000000000001,
         "y": 0.06758720930232608,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -153219,19 +153219,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 1,
-        "year": 0
+        "month": 2,
+        "3month": 1
       },
       "crackTotalScore": 11,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "LAR": {
       "symbol": "LAR",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 5.98,
       "priceFormatted": "$5.98",
@@ -154493,13 +154493,13 @@
       ],
       "metalTag": "Li",
       "hasIbLabel": false,
-      "rsi": 69.95,
-      "rsiPeriod": 10,
+      "rsi": 66.07,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 70,
+        "rsi": 66.1,
         "changePercent": 7.17,
-        "x": 0.3990000000000001,
+        "x": 0.32139999999999985,
         "y": 0.3584229390681007,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -154514,19 +154514,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "SGML": {
       "symbol": "SGML",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 14.21,
       "priceFormatted": "$14.21",
@@ -155788,13 +155788,13 @@
       ],
       "metalTag": "Li",
       "hasIbLabel": false,
-      "rsi": 67.05,
-      "rsiPeriod": 10,
+      "rsi": 66.34,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 67.1,
+        "rsi": 66.3,
         "changePercent": 7.73,
-        "x": 0.34099999999999997,
+        "x": 0.3268000000000001,
         "y": 0.38665655799848425,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -155809,19 +155809,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "LIT": {
       "symbol": "LIT",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 66.27,
       "priceFormatted": "$66.27",
@@ -157083,13 +157083,13 @@
       ],
       "metalTag": "Li",
       "hasIbLabel": false,
-      "rsi": 59.94,
-      "rsiPeriod": 10,
+      "rsi": 59.85,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
         "rsi": 59.9,
         "changePercent": 2.17,
-        "x": 0.19879999999999995,
+        "x": 0.19700000000000004,
         "y": 0.10869565217391278,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -157104,11 +157104,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 8,
       "currentPeriodCrack": 0
@@ -157116,7 +157116,7 @@
     "CRML": {
       "symbol": "CRML",
       "metalCategory": "lithium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 8.12,
       "priceFormatted": "$8.12",
@@ -158378,13 +158378,13 @@
       ],
       "metalTag": "Li",
       "hasIbLabel": false,
-      "rsi": 51.22,
-      "rsiPeriod": 10,
+      "rsi": 48.52,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 51.2,
+        "rsi": 48.5,
         "changePercent": 17,
-        "x": 0.024399999999999977,
+        "x": -0.02959999999999994,
         "y": 0.8501440922190193,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -158399,19 +158399,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "CCJ": {
       "symbol": "CCJ",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 98.56,
       "priceFormatted": "$98.56",
@@ -159673,13 +159673,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 68.67,
-      "rsiPeriod": 10,
+      "rsi": 63.81,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 68.7,
+        "rsi": 63.8,
         "changePercent": 7.73,
-        "x": 0.3734,
+        "x": 0.27620000000000006,
         "y": 0.3863810252486615,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -159694,11 +159694,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 0,
+        "3month": 1
       },
       "crackTotalScore": 5,
       "currentPeriodCrack": 0
@@ -159706,7 +159706,7 @@
     "NXE": {
       "symbol": "NXE",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 10.25,
       "priceFormatted": "$10.25",
@@ -160968,18 +160968,18 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 71.21,
-      "rsiPeriod": 10,
+      "rsi": 66.38,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "optimistic-overbought",
-        "rsi": 71.2,
+        "quadrant": "optimistic-neutral",
+        "rsi": 66.4,
         "changePercent": 11.41,
-        "x": 0.42419999999999985,
+        "x": 0.3275999999999999,
         "y": 0.5706521739130439,
-        "color": "#ff6b6b",
-        "label": "楽観的・買われすぎ",
-        "description": "強気の過熱（注意）",
-        "isOverbought": true,
+        "color": "#94d82d",
+        "label": "楽観的・適正",
+        "description": "上昇トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": true
       },
@@ -160989,19 +160989,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "DNN": {
       "symbol": "DNN",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 3.03,
       "priceFormatted": "$3.03",
@@ -162263,13 +162263,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 69.92,
-      "rsiPeriod": 10,
+      "rsi": 65.39,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 69.9,
+        "rsi": 65.4,
         "changePercent": 13.91,
-        "x": 0.39840000000000003,
+        "x": 0.3078,
         "y": 0.6954887218045106,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -162284,11 +162284,11 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 0,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 0,
+        "3month": 2
       },
       "crackTotalScore": 6,
       "currentPeriodCrack": 0
@@ -162296,7 +162296,7 @@
     "UEC": {
       "symbol": "UEC",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 13.11,
       "priceFormatted": "$13.11",
@@ -163558,13 +163558,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 58.34,
-      "rsiPeriod": 10,
+      "rsi": 55.05,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 58.3,
+        "rsi": 55.1,
         "changePercent": 12.24,
-        "x": 0.16680000000000006,
+        "x": 0.10099999999999994,
         "y": 0.6121575342465753,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -163579,19 +163579,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "LEU": {
       "symbol": "LEU",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 272.5,
       "priceFormatted": "$272.50",
@@ -164853,13 +164853,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 59.43,
-      "rsiPeriod": 10,
+      "rsi": 54.88,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 59.4,
+        "rsi": 54.9,
         "changePercent": 12.25,
-        "x": 0.1886,
+        "x": 0.09760000000000005,
         "y": 0.6125391333003792,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -164874,19 +164874,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "URA": {
       "symbol": "URA",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 46.06,
       "priceFormatted": "$46.06",
@@ -166148,13 +166148,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 61.68,
-      "rsiPeriod": 10,
+      "rsi": 57.37,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 61.7,
+        "rsi": 57.4,
         "changePercent": 7.79,
-        "x": 0.2336,
+        "x": 0.14739999999999995,
         "y": 0.38965597940557056,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -166169,19 +166169,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "UUUU": {
       "symbol": "UUUU",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 16.68,
       "priceFormatted": "$16.68",
@@ -167443,13 +167443,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 64.06,
-      "rsiPeriod": 10,
+      "rsi": 59.05,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 64.1,
+        "rsi": 59.1,
         "changePercent": 14.72,
-        "x": 0.28120000000000006,
+        "x": 0.18099999999999994,
         "y": 0.7359009628610731,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -167464,19 +167464,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "OKLO": {
       "symbol": "OKLO",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 77.8,
       "priceFormatted": "$77.80",
@@ -168738,13 +168738,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 41.64,
-      "rsiPeriod": 10,
+      "rsi": 40.92,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 41.6,
+        "rsi": 40.9,
         "changePercent": 8.42,
-        "x": -0.1672,
+        "x": -0.18159999999999996,
         "y": 0.42084726867335503,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -168759,19 +168759,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "SMR": {
       "symbol": "SMR",
       "metalCategory": "uranium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 16.31,
       "priceFormatted": "$16.31",
@@ -170033,13 +170033,13 @@
       ],
       "metalTag": "U",
       "hasIbLabel": false,
-      "rsi": 44.5,
-      "rsiPeriod": 10,
+      "rsi": 40.53,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 44.5,
+        "rsi": 40.5,
         "changePercent": 15.1,
-        "x": -0.11,
+        "x": -0.18939999999999999,
         "y": 0.7551164431898373,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -170054,19 +170054,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "VALE": {
       "symbol": "VALE",
       "metalCategory": "nickel",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 13.26,
       "priceFormatted": "$13.26",
@@ -171328,13 +171328,13 @@
       ],
       "metalTag": "Ni+Fe",
       "hasIbLabel": false,
-      "rsi": 63.45,
-      "rsiPeriod": 10,
+      "rsi": 63.38,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 63.5,
+        "rsi": 63.4,
         "changePercent": 1.77,
-        "x": 0.2690000000000001,
+        "x": 0.26760000000000006,
         "y": 0.08825786646201092,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -171349,19 +171349,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 1,
-        "year": 0
+        "month": 1,
+        "3month": 1
       },
       "crackTotalScore": 7,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "MP": {
       "symbol": "MP",
       "metalCategory": "ree",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 54.97,
       "priceFormatted": "$54.97",
@@ -172623,13 +172623,13 @@
       ],
       "metalTag": "REE",
       "hasIbLabel": false,
-      "rsi": 50.99,
-      "rsiPeriod": 10,
+      "rsi": 47.96,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 51,
+        "rsi": 48,
         "changePercent": 8.81,
-        "x": 0.01980000000000004,
+        "x": -0.04079999999999998,
         "y": 0.4404196357878064,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -172644,19 +172644,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 13,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "REMX": {
       "symbol": "REMX",
       "metalCategory": "ree",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 76.78,
       "priceFormatted": "$76.78",
@@ -173918,13 +173918,13 @@
       ],
       "metalTag": "REE",
       "hasIbLabel": false,
-      "rsi": 65.62,
-      "rsiPeriod": 10,
+      "rsi": 62.81,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 65.6,
+        "rsi": 62.8,
         "changePercent": 3.87,
-        "x": 0.31240000000000007,
+        "x": 0.25620000000000004,
         "y": 0.19345238095238093,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -173939,19 +173939,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 1,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 1,
+        "3month": 2
       },
       "crackTotalScore": 8,
-      "currentPeriodCrack": 1
+      "currentPeriodCrack": 0
     },
     "AII": {
       "symbol": "AII",
       "metalCategory": "ree",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 20.18,
       "priceFormatted": "$20.18",
@@ -174793,13 +174793,13 @@
       ],
       "metalTag": "REE",
       "hasIbLabel": false,
-      "rsi": 40.84,
-      "rsiPeriod": 10,
+      "rsi": 41.93,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "pessimistic-neutral",
-        "rsi": 40.8,
+        "rsi": 41.9,
         "changePercent": -3.12,
-        "x": -0.18319999999999992,
+        "x": -0.16140000000000002,
         "y": -0.15602496399423876,
         "color": "#e599f7",
         "label": "悲観的・適正",
@@ -174814,19 +174814,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "IPX": {
       "symbol": "IPX",
       "metalCategory": "titanium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 39.91,
       "priceFormatted": "$39.91",
@@ -176088,18 +176088,18 @@
       ],
       "metalTag": "Ti",
       "hasIbLabel": false,
-      "rsi": 72.54,
-      "rsiPeriod": 10,
+      "rsi": 65.32,
+      "rsiPeriod": 14,
       "sentiment": {
-        "quadrant": "optimistic-overbought",
-        "rsi": 72.5,
+        "quadrant": "optimistic-neutral",
+        "rsi": 65.3,
         "changePercent": 10.29,
-        "x": 0.45080000000000015,
+        "x": 0.30639999999999984,
         "y": 0.5147160425590707,
-        "color": "#ff6b6b",
-        "label": "楽観的・買われすぎ",
-        "description": "強気の過熱（注意）",
-        "isOverbought": true,
+        "color": "#94d82d",
+        "label": "楽観的・適正",
+        "description": "上昇トレンド",
+        "isOverbought": false,
         "isOversold": false,
         "isOptimistic": true
       },
@@ -176109,19 +176109,19 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 1,
         "week": 1,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 10,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     },
     "TROX": {
       "symbol": "TROX",
       "metalCategory": "titanium",
-      "period": "month",
+      "period": "year",
       "exchange": "US",
       "price": 4.27,
       "priceFormatted": "$4.27",
@@ -177383,13 +177383,13 @@
       ],
       "metalTag": "Ti",
       "hasIbLabel": false,
-      "rsi": 53.27,
-      "rsiPeriod": 10,
+      "rsi": 54.38,
+      "rsiPeriod": 14,
       "sentiment": {
         "quadrant": "optimistic-neutral",
-        "rsi": 53.3,
+        "rsi": 54.4,
         "changePercent": 2.4,
-        "x": 0.06540000000000007,
+        "x": 0.08760000000000005,
         "y": 0.1199040767386087,
         "color": "#94d82d",
         "label": "楽観的・適正",
@@ -177404,14 +177404,14 @@
       "crackLevel": 2,
       "crackDisplay": "ヒビ多",
       "crackScores": {
-        "month": 2,
+        "year": 0,
         "daily": 0,
         "week": 2,
-        "3month": 2,
-        "year": 0
+        "month": 2,
+        "3month": 2
       },
       "crackTotalScore": 12,
-      "currentPeriodCrack": 2
+      "currentPeriodCrack": 0
     }
   },
   "errors": []
