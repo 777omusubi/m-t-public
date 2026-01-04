@@ -16,6 +16,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🥇💰 METALS TREEMAP v3.29 💰💎</title>
+    <div id="last-update"
+     style="font-size:12px;color:#666;margin:8px 0;">
+  最終更新：読み込み中…
+</div>
     <style>
         /* Google Fontsの読み込み（オプショナル - エラー時はシステムフォントを使用） */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
@@ -2466,5 +2470,21 @@
             showNotification('🚀 Metals Treemap 準備完了!', 'success');
         });
     </script>
+    <script>
+fetch("./data/_heartbeat.txt", { cache: "no-store" })
+  .then(res => {
+    if (!res.ok) throw new Error("heartbeat not found");
+    return res.text();
+  })
+  .then(text => {
+    document.getElementById("last-update").textContent =
+      "最終更新: " + text.trim();
+  })
+  .catch(err => {
+    document.getElementById("last-update").textContent =
+      "最終更新: 取得失敗";
+    console.error(err);
+  });
+</script>
 </body>
 </html>
